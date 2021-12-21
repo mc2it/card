@@ -42,8 +42,8 @@ class Program {
 					.label("GitHub", "<gray>https://github.com/</><cyan>mc2it</>")
 				.line()
 					.label("Card", "<yellow>npx</> <white>@mc2it/card</>")
-					.label("E-mail", "<white>dev@mc2it.com</>")
-					.label("Web", "<white>https://mc2it.com</>")
+					.label("Mail", "<white>dev@mc2it.com</>")
+					.label("Website", "<white>https://mc2it.com</>")
 				.line()
 			.footer();
 
