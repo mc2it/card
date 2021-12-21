@@ -1,0 +1,11 @@
+--class-path src
+--define analyzer-optimize
+--define js-es=6
+--define js-global=global
+--define no-deprecation-warnings
+--define watch.excludeRoot
+--js bin/card.js
+--library console.hx
+--library hxnodejs
+--library tink_cli
+--main card.Program
