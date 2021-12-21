@@ -1,0 +1,12 @@
+{
+	"classPath": "src/",
+	"contributors": ["mc2it"],
+	"dependencies": {"Console.hx": "", "hxnodejs": "", "tink_cli": ""},
+	"description": "Business card of MC2IT, distribution and services.",
+	"license": "MIT",
+	"name": "mc2it",
+	"releasenote": "Initial release.",
+	"tags": ["card", "cli", "mc2it"],
+	"url": "https://bitbucket.org/mc2it/card",
+	"version": "1.0.0"
+}
