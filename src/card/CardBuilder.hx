@@ -10,7 +10,7 @@ abstract CardBuilder(StringBuf) from StringBuf {
 	static inline final indent = "   ";
 
 	/** The inner width of a line, in characters. **/
-	static inline final width = 50;
+	static inline final width = 38;
 
 	/** Creates a new string buffer. **/
 	public function new() this = new StringBuf();
@@ -29,7 +29,7 @@ abstract CardBuilder(StringBuf) from StringBuf {
 
 	/** Adds a labeled value. **/
 	public inline function label(label: String, value: String)
-		return line('<light_white>$label:</> '.lpad(" ", 10 + indent.length + "<light_white></>".length) + value);
+		return line('<light_white>$label:</> '.lpad(" ", 8 + indent.length + "<light_white></>".length) + value);
 
 	/** Appends a line of text. **/
 	public inline function line(text = "")
