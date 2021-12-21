@@ -4,12 +4,18 @@
 		{
 			"label": "Build",
 			"group": {"kind": "build", "isDefault": true},
-			"type": "shell", "command": "lix", "args": ["Build"]
+			"problemMatcher": ["$haxe", "$haxe-absolute", "$haxe-error", "$haxe-trace"],
+			"type": "hxml", "file": "build.hxml"
 		},
 		{
 			"label": "Clean",
 			"group": "build",
 			"type": "shell", "command": "lix", "args": ["Clean"]
+		},
+		{
+			"label": "Dist",
+			"group": "build",
+			"type": "shell", "command": "lix", "args": ["Dist"]
 		},
 		{
 			"label": "Doc",
@@ -19,7 +25,7 @@
 		{
 			"label": "Install",
 			"group": "build",
-			"type": "shell", "command": "lix", "args": ["download"]
+			"type": "shell", "command": "lix", "args": ["Install"]
 		},
 		{
 			"label": "Lint",
@@ -30,6 +36,11 @@
 			"label": "Publish",
 			"group": "build",
 			"type": "shell", "command": "lix", "args": ["Publish"]
+		},
+		{
+			"label": "Version",
+			"group": "build",
+			"type": "shell", "command": "lix", "args": ["Version"]
 		}
 	]
 }
