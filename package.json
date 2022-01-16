@@ -7,7 +7,7 @@
 	"name": "@mc2it/card",
 	"repository": "bitbucket:mc2it/card",
 	"type": "commonjs",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"author": {
 		"email": "dev@mc2it.com",
 		"name": "MC2IT",
