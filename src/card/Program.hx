@@ -39,7 +39,7 @@ class Program {
 					.center("<light_white>MC2IT</>")
 					.center("<white>Distribution & Services</>")
 				.line()
-					.label("GitHub", "<gray>https://github.com/</><cyan>mc2it</>")
+					.label("Bitbucket", "<gray>https://bitbucket.org/</><cyan>mc2it</>")
 				.line()
 					.label("Card", "<yellow>npx</> <white>@mc2it/card</>")
 					.label("Email", "<white>dev@mc2it.com</>")
