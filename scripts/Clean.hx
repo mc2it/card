@@ -1,4 +1,4 @@
-import Tools.cleanDirectory;
+import Tools;
 import sys.FileSystem.*;
 
 /** Runs the script. **/

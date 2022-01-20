@@ -1,5 +1,5 @@
 //! --class-path src
-import Tools.replaceInFile;
+import Tools;
 import card.Version.*;
 
 /** Runs the script. **/
