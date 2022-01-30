@@ -2,7 +2,6 @@ package card;
 
 import tink.Cli;
 import tink.cli.Rest;
-
 using StringTools;
 using tink.CoreApi;
 
