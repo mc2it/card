@@ -16,23 +16,23 @@ abstract CardBuilder(StringBuf) from StringBuf {
 	public function new() this = new StringBuf();
 
 	/** Appends a centered line of text. **/
-	public inline function center(text: String)
+	public function center(text: String)
 		return line('${repeat(" ", Math.floor((width - getLength(text)) / 2))}$text');
 
 	/** Appends a bottom border. **/
-	public inline function footer()
+	public function footer()
 		return addLine('<green>╰${repeat("─")}╯</>');
 
 	/** Appends a top border. **/
-	public inline function header()
+	public function header()
 		return addLine('<green>╭${repeat("─")}╮</>');
 
 	/** Adds a labeled value. **/
-	public inline function label(label: String, value: String)
+	public function label(label: String, value: String)
 		return line('<light_white>$label:</> '.lpad(" ", 11 + indent.length + "<light_white></>".length) + value);
 
 	/** Appends a line of text. **/
-	public inline function line(text = "")
+	public function line(text = "")
 		return addLine('<green>│</>$text${repeat(" ", width - getLength(text))}<green>│</>');
 
 	/** Appends a line of plain text. **/
