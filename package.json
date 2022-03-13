@@ -24,7 +24,7 @@
 		"mc2it": "./bin/card.js"
 	},
 	"devDependencies": {
-		"terser": "^5.11.0"
+		"terser": "^5.12.0"
 	},
 	"engines": {
 		"node": ">=16.0.0"
