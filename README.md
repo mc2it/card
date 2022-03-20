@@ -1,5 +1,5 @@
 # MC2IT Card
-![Runtime](https://flat.badgen.net/npm/node/@mc2it/card) ![Release](https://flat.badgen.net/npm/v/@mc2it/card) ![License](https://flat.badgen.net/npm/license/@mc2it/card) ![Downloads](https://flat.badgen.net/npm/dt/@mc2it/card)
+![Runtime](https://badgen.net/npm/node/@mc2it/card) ![Release](https://badgen.net/npm/v/@mc2it/card) ![License](https://badgen.net/npm/license/@mc2it/card) ![Downloads](https://badgen.net/npm/dt/@mc2it/card)
 
 Business card of MC2IT, distribution and services, implemented in [Haxe](https://haxe.org).
 
