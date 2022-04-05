@@ -13,6 +13,9 @@
 		"name": "MC2IT",
 		"url": "https://mc2it.com"
 	},
+	"bin": {
+		"mc2it": "./bin/card.js"
+	},
 	"contributors": [
 		{
 			"email": "cedric@belin.io",
@@ -20,9 +23,6 @@
 			"url": "https://belin.io"
 		}
 	],
-	"bin": {
-		"mc2it": "./bin/card.js"
-	},
 	"devDependencies": {
 		"terser": "^5.12.1"
 	},
