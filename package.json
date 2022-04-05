@@ -1,11 +1,11 @@
 {
-	"bugs": "https://bitbucket.org/mc2it/card/issues",
+	"bugs": "https://github.com/mc2it/card/issues",
 	"description": "Business card of MC2IT, distribution and services.",
 	"files": [],
-	"homepage": "https://bitbucket.org/mc2it/card",
+	"homepage": "https://github.com/mc2it/card",
 	"license": "MIT",
 	"name": "@mc2it/card",
-	"repository": "bitbucket:mc2it/card",
+	"repository": "github:mc2it/card",
 	"type": "commonjs",
 	"version": "1.0.2",
 	"author": {

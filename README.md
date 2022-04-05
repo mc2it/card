@@ -22,9 +22,9 @@ And voila!
 
 ## See also
 - [API reference](https://mc2it.github.io/card)
-- [Git repository](https://bitbucket.org/mc2it/card)
+- [Git repository](https://github.com/mc2it/card)
 - [npm package](https://www.npmjs.com/package/@mc2it/card)
-- [Submit an issue](https://bitbucket.org/mc2it/card/issues)
+- [Submit an issue](https://github.com/mc2it/card/issues)
 
 ## License
-[MC2IT Card](https://bitbucket.org/mc2it/card) is distributed under the MIT License.
+[MC2IT Card](https://github.com/mc2it/card) is distributed under the MIT License.

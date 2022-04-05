@@ -11,10 +11,10 @@ function main() {
 	Sys.command("lix", [
 		"run", "dox",
 		"--define", "description", "Business card of MC2IT, distribution and services.",
-		"--define", "source-path", "https://bitbucket.org/mc2it/card/src/main/src",
+		"--define", "source-path", "https://github.com/mc2it/card/blob/main/src",
 		"--define", "themeColor", "0xffc105",
 		"--define", "version", Version.packageVersion,
-		"--define", "website", "https://bitbucket.org/mc2it/card",
+		"--define", "website", "https://github.com/mc2it/card",
 		"--input-path", "var",
 		"--output-path", "docs",
 		"--title", "MC2IT Card",
