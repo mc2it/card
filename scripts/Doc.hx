@@ -1,5 +1,5 @@
 //! --class-path src
-import card.Version;
+import mc2it_card.Version;
 import sys.FileSystem;
 import sys.io.File;
 

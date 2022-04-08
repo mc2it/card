@@ -1,5 +1,5 @@
 //! --class-path src
-import card.Version;
+import mc2it_card.Version;
 
 /** Runs the script. **/
 function main() {
