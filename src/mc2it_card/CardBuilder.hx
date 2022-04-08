@@ -1,4 +1,4 @@
-package card;
+package mc2it_card;
 
 using StringTools;
 

@@ -5,7 +5,7 @@ function main() {
 	for (script in ["Clean", "Version"]) Sys.command('lix $script');
 	Sys.command("haxe --dce full build.hxml");
 
-	final file = "bin/card.js";
+	final file = "bin/mc2it_card.js";
 	Sys.command('npx terser --comments=false --config-file=etc/terser.json --output=$file $file');
 	File.saveContent(file, '#!/usr/bin/env node\n${File.getContent(file)}');
 	Sys.command('git update-index --chmod=+x $file');

@@ -1,6 +1,6 @@
 {
 	"classPath": "src/",
-	"contributors": ["mc2it"],
+	"contributors": ["mc2it", "cedx"],
 	"dependencies": {"Console.hx": "", "hxnodejs": "", "tink_cli": ""},
 	"description": "Business card of MC2IT, distribution and services.",
 	"license": "MIT",

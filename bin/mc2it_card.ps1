@@ -1,3 +1,3 @@
 #!/usr/bin/env pwsh
 Set-StrictMode -Version Latest
-node "$PSScriptRoot/card.js" @args
+node "$PSScriptRoot/mc2it_card.js" @args
