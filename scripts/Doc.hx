@@ -18,7 +18,7 @@ function main() {
 		"--input-path", "var",
 		"--output-path", "docs",
 		"--title", "MC2IT Card",
-		"--toplevel-package", "card"
+		"--toplevel-package", "mc2it_card"
 	]);
 
 	File.copy("www/favicon.ico", "docs/favicon.ico");
