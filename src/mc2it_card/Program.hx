@@ -6,7 +6,7 @@ using StringTools;
 using tink.CoreApi;
 
 /** Print the business card of Cédric Belin, full stack developer. **/
-class Program {
+final class Program {
 
 	/** The string corresponding to a line break. **/
 	public static final newLine = Sys.systemName() == "Windows" ? "\r\n" : "\n";
