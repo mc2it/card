@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [2.0.0](https://github.com/mc2it/card/compare/v1.0.3...v2.0.0)
+- Breaking change: renamed the root package to `mc2it_card`.
+
 ## Version [1.0.3](https://github.com/mc2it/card/compare/v1.0.2...v1.0.3)
 - Updated the links section.
 - Updated the package dependencies.
