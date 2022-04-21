@@ -3,7 +3,8 @@ import process from "node:process";
 import {main} from "../lib/index.js";
 
 // Start the application.
-main().catch(error => {
+try { await main(); }
+catch (error) {
 	console.error(error.message);
 	process.exitCode = 1;
-});
+}
