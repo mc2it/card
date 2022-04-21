@@ -1,10 +1,104 @@
 <!DOCTYPE html>
-<html lang="en"><!-- use theme color or fallback -->
-<!--use textcolor from settings, otherwise create a contrasting color to theme color-->
-<head><meta charset="utf-8"/><link href="./bootstrap/css/bootstrap.min.css" rel="stylesheet"/><link href="./bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet"/><link href="./bootstrap/css/bootstrap-select.min.css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic" rel="stylesheet" type="text/css"/><link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,600,600italic,400" rel="stylesheet" type="text/css"/><link href="https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css" rel="stylesheet" type="text/css"/><script src="./jquery-1.9.1.min.js"></script><script src="./bootstrap/js/bootstrap.min.js"></script><script src="./bootstrap/js/bootstrap-select.min.js"></script><link href="./styles.css" rel="stylesheet"/><link href="./extra-styles.css" rel="stylesheet"/><link href="./haxe-nav.css" rel="stylesheet"/><link href="./dark-mode.css" rel="stylesheet"/><script>var dox = {rootPath: "./",platforms: ["api"]};</script><script src="./nav.js"></script><script src="./index.js"></script><link rel="icon" href="./favicon.ico" type="image/x-icon"/><title>mc2it_card - MC2IT Card</title></head><body><script>/* Here to prevent flash of unstyled content */let systemDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;if ((!localStorage.theme && systemDarkMode) || localStorage.theme == "dark") {document.body.style.backgroundColor = "#111";document.body.style.opacity = "0";document.addEventListener("DOMContentLoaded", function(event) {toggleTheme();document.body.style.backgroundColor = "";document.body.style.opacity = "";});}</script><style>
-.navbar .brand {
-	display: inline-block;
-	float: none;
-	text-shadow: 0 0 0 transparent;
-}
-</style><nav class="nav"><div class="navbar"><div class="navbar-inner" style="background:#165898; border-bottom:1px solid rgba(0,0,0,.09)"><div class="container"><a class="brand" style="color:#FFFFFF" href="./">MC2IT Card</a><a href="#" id="theme-toggle" class="brand" style="color:#FFFFFF" onclick="toggleTheme()" title="Toggle Dark Mode"><i class="fa fa-moon-o"></i></a></div></div></div></nav><div class="container main-content"><div class="row-fluid"><div class="span3"><div class="well sidebar-nav"><form class="form-search" id="searchForm"><div class="input-prepend input-block-level"><span class="add-on"><i class="fa fa-search"></i></span><input id="search" type="text" placeholder="Filter (Ctrl+P)" autocomplete="off"/></div></form></div><div class="well sidebar-nav" id="explorer"><div id="nav"></div></div></div><div class="span9"><h1>mc2it_card <small>version 2.0.0</small></h1><p>Business card of MC2IT, distribution and services.</p>  <table class="table table-condensed"><tbody><tr class="abstract"><td style="width:200px;"><a href="./mc2it_card/CardBuilder.html" title=".CardBuilder">CardBuilder</a></td><td><p>Builds a business card by appending string chunks.</p></td></tr><tr class="abstract"><td style="width:200px;"><a href="./mc2it_card/HaxeTarget.html" title=".HaxeTarget">HaxeTarget</a></td><td><p>Defines the Haxe compilation target.</p></td></tr><tr class="class"><td style="width:200px;"><a href="./mc2it_card/Program.html" title=".Program">Program</a></td><td><p>Print the business card of Cédric Belin, full stack developer.</p></td></tr><tr class="class"><td style="width:200px;"><a href="./mc2it_card/Version.html" title=".Version">Version</a></td><td><p>Provides information about the program version.</p></td></tr></tbody></table></div></div></div><footer class="section site-footer" style="background:#165898"><div class="container"><div class="copyright"><p style="color:#FFFFFF">This documentation is generated for version 2.0.0</p><p style="color:#FFFFFF">&copy; 2022 &nbsp;<a style="color:#FFFFFF" href="https://github.com/mc2it/card">https://github.com/mc2it/card</a></p></div></div></footer><script src=".//highlighter.js"></script><link href="./highlighter.css" rel="stylesheet"/></body></html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>MC2IT Card: </title>
+    
+      <link type="text/css" rel="stylesheet" href="styles/vendor/prism-tomorrow-night.css">
+    
+    <link type="text/css" rel="stylesheet" href="styles/styles.css">
+    
+</head>
+<body>
+
+<header class="layout-header">
+  
+    <a href="./">
+      <img
+        src="favicon.svg"
+        alt="MC2IT Card"
+      >
+    </a>
+  
+  <h1>
+    <a href="./index.html">
+      MC2IT Card
+    </a>
+  </h1>
+  <nav class="layout-nav">
+    <li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#main">main</a></span></li>
+  </nav>
+</header>
+
+
+<main class="layout-main ">
+  <div class="container">
+    <p class="page-kind"></p>
+    <h1 class="page-title"></h1>
+    
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section class="readme">
+        <article><h1>MC2IT Card</h1>
+<p><img src="https://badgen.net/npm/node/@mc2it/card" alt="Runtime"> <img src="https://badgen.net/npm/v/@mc2it/card" alt="Release"> <img src="https://badgen.net/npm/license/@mc2it/card" alt="License"> <img src="https://badgen.net/npm/dt/@mc2it/card" alt="Downloads"></p>
+<p>Business card of MC2IT, distribution and services, implemented in <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">JavaScript</a>.</p>
+<h2>Usage</h2>
+<p>Before you start, you need to make sure you have <a href="https://nodejs.org">Node.js</a> up and running.
+You can verify if you're already good to go with the following command:</p>
+<pre class="prettyprint source lang-shell"><code>node --version
+# v18.0.0
+</code></pre>
+<p>Then, to display the business card, just type the following command in your terminal:</p>
+<pre class="prettyprint source lang-shell"><code>npx @mc2it/card
+</code></pre>
+<p>And voila!</p>
+<h2>See also</h2>
+<ul>
+<li><a href="https://mc2it.github.io/card">API reference</a></li>
+<li><a href="https://github.com/mc2it/card">Git repository</a></li>
+<li><a href="https://www.npmjs.com/package/@mc2it/card">npm package</a></li>
+<li><a href="https://github.com/mc2it/card/issues">Submit an issue</a></li>
+</ul>
+<h2>License</h2>
+<p><a href="https://github.com/mc2it/card">MC2IT Card</a> is distributed under the MIT License.</p></article>
+    </section>
+
+
+
+
+
+
+  </div>
+</main>
+
+<footer class="layout-footer">
+  <div class="container">
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a>
+  </div>
+</footer>
+
+
+
+<script src="scripts/prism.dev.js"></script>
+</body>
+</html>
