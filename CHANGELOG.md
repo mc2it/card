@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [3.0.0](https://github.com/mc2it/card/compare/v2.0.0...v3.0.0)
+- Ported the source code to [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
+
 ## Version [2.0.0](https://github.com/mc2it/card/compare/v1.0.3...v2.0.0)
 - Breaking change: renamed the root package to `mc2it_card`.
 
