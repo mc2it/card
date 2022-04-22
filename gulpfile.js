@@ -13,7 +13,7 @@ export default async function build() {
 
 /** Deletes all generated files and reset any saved state. */
 export function clean() {
-	return del(["lib/**/*.{ts,ts.map}", "var/**/*"]);
+	return del(["share", "var/**/*"]);
 }
 
 /** Builds the documentation. */

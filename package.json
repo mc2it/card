@@ -7,7 +7,7 @@
 	"name": "@mc2it/card",
 	"repository": "github:mc2it/card",
 	"type": "module",
-	"types": "./lib/index.d.ts",
+	"types": "./share/index.d.ts",
 	"version": "3.0.0",
 	"author": {
 		"email": "dev@mc2it.com",
