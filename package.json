@@ -49,7 +49,7 @@
 		"mc2it"
 	],
 	"scripts": {
-		"prepack": "tsc",
+		"prepack": "gulp",
 		"start": "node bin/mc2it_card.js"
 	}
 }
