@@ -6,7 +6,8 @@ import del from "del";
 const sources = ["*.js", "bin/*.js", "lib/**/*.js"];
 
 /** Builds the project. */
-export default function build() {
+export default async function build() {
+	await clean();
 	return exec("npx", ["tsc"]);
 }
 
