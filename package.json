@@ -31,7 +31,7 @@
 	"devDependencies": {
 		"@types/node": "^17.0.25",
 		"del": "^6.0.0",
-		"eslint": "^8.13.0",
+		"eslint": "^8.14.0",
 		"gulp": "^4.0.2",
 		"jsdoc": "^3.6.10",
 		"tidy-jsdoc": "^1.4.1",
