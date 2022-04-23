@@ -1,14 +1,20 @@
 import {spawn} from "node:child_process";
 import {readFile} from "node:fs/promises";
 import del from "del";
+import gulp from "gulp";
 
 // The file patterns providing the list of source files.
 const sources = ["*.js", "bin/*.js", "lib/**/*.js"];
 
+/** The default task. */
+export default gulp.series(
+	clean,
+	build
+);
+
 /** Builds the project. */
-export default async function build() {
-	await clean();
-	return exec("npx", ["tsc", "--project", "jsconfig.json"]);
+export function build() {
+	return exec("npx", ["tsc", "--project", "lib/jsconfig.json"]);
 }
 
 /** Deletes all generated files and reset any saved state. */
@@ -41,7 +47,7 @@ export async function publish() {
 
 /** Watches for file changes. */
 export function watch() {
-	return exec("npx", ["tsc", "--project", "jsconfig.json", "--watch"]);
+	return exec("npx", ["tsc", "--project", "lib/jsconfig.json", "--watch"]);
 }
 
 /**
