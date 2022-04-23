@@ -8,7 +8,7 @@ const sources = ["*.js", "bin/*.js", "lib/**/*.js"];
 /** Builds the project. */
 export default async function build() {
 	await clean();
-	return exec("npx", ["tsc"]);
+	return exec("npx", ["tsc", "--project", "jsconfig.json"]);
 }
 
 /** Deletes all generated files and reset any saved state. */
@@ -41,7 +41,7 @@ export async function publish() {
 
 /** Watches for file changes. */
 export function watch() {
-	return exec("npx", ["tsc", "--watch"]);
+	return exec("npx", ["tsc", "--project", "jsconfig.json", "--watch"]);
 }
 
 /**
