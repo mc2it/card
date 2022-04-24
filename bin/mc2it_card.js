@@ -1,10 +1,14 @@
 #!/usr/bin/env node
+import console from "node:console";
+import {readFileSync} from "node:fs";
 import process from "node:process";
-import {main} from "../lib/index.js";
+import {program} from "commander";
+import {getCard} from "../lib/index.js";
 
 // Start the application.
-try { await main(); }
-catch (error) {
-	process.exitCode = 1;
-	console.error(error);
-}
+const {version} = JSON.parse(readFileSync(new URL("../package.json", import.meta.url), "utf8"));
+program.name("npx @mc2it/card")
+	.description("Print the business card of MC2IT, distribution and services.")
+	.version(version, "-v, --version")
+	.action(() => console.log(getCard(1)))
+	.parse(process.argv);
