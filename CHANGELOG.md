@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [3.1.0](https://github.com/mc2it/card/compare/v3.0.0...v3.1.0)
+- Extracted the main feature to the `getCard()` function.
+
 ## Version [3.0.0](https://github.com/mc2it/card/compare/v2.0.0...v3.0.0)
 - Ported the source code to [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript).
 
