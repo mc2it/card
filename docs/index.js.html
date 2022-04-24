@@ -26,7 +26,7 @@
     </a>
   </h1>
   <nav class="layout-nav">
-    <li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#main">main</a></span></li>
+    <li class="nav-heading"><a href="global.html">Globals</a></li><li class="nav-item"><span class="nav-item-type type-function" title="function">F</span><span class="nav-item-name is-function"><a href="global.html#getCard">getCard</a></span></li>
   </nav>
 </header>
 
@@ -43,23 +43,15 @@
 
 <section>
     <article>
-        <pre id="source" class="source-page line-numbers"><code class="language-js">import console from "node:console";
-import {readFile} from "node:fs/promises";
-import boxen from "boxen";
+        <pre id="source" class="source-page line-numbers"><code class="language-js">import boxen from "boxen";
 import chalk from "chalk";
-import {program} from "commander";
 
 /**
- * Application entry point.
- * @returns {Promise&lt;void>} Resolves when the program is terminated.
+ * Returns the card content.
+ * @param {number} [margin=0] The margin size.
+ * @returns {string} The card content.
  */
-export async function main() {
-	const {version} = JSON.parse(await readFile(new URL("../package.json", import.meta.url), "utf8"));
-	program.name("npx @mc2it/card")
-		.description("Print the business card of MC2IT, distribution and services.")
-		.version(version, "-v, --version")
-		.parse(process.argv);
-
+export function getCard(margin = 0) {
 	const buffer = [
 		`${chalk.white.bold("MC2IT")} - ${chalk.white("Distribution &amp; Services")}`,
 		"",
@@ -69,12 +61,12 @@ export async function main() {
 		`${chalk.white.bold("Website:")} ${chalk.gray("https://mc2it.com")}`
 	];
 
-	console.log(boxen(buffer.join("\n"), {
+	return boxen(buffer.join("\n"), {
 		borderColor: "green",
 		borderStyle: "round",
-		margin: 1,
+		margin,
 		padding: 1
-	}));
+	});
 }
 </code></pre>
     </article>
