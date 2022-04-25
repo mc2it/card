@@ -1,7 +1,7 @@
 {
 	"$schema": "https://typedoc.org/schema.json",
 	"entryPoints": ["../lib/index.js"],
-	"excludePrivate": false,
+	"excludePrivate": true,
 	"gitRevision": "main",
 	"hideGenerator": true,
 	"name": "MC2IT Card",
