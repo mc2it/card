@@ -41,7 +41,7 @@ export async function publish() {
 
 /** Watches for file changes. */
 export function watch() {
-	return exec("npx", ["tsc", "--project", "lib/jsconfig.json", "--watch"]);
+	return exec("npx", ["tsc", "--project", "jsconfig.json", "--watch"]);
 }
 
 /**
