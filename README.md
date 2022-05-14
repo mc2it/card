@@ -9,13 +9,13 @@ You can verify if you're already good to go with the following command:
 
 ```shell
 node --version
-# v18.0.0
+# v18.1.0
 ```
 
 Then, to display the business card, just type the following command in your terminal:
 
 ```shell
-npm exec @mc2it/card
+npx @mc2it/card
 ```
 
 And voila!
