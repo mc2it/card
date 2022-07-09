@@ -1,10 +1,10 @@
 {
-	"include": ["*.js", "bin/*.js", "lib/**/*.js"],
+	"include": ["*.js", "bin/*.js", "src/**/*.js"],
 	"compilerOptions": {
 		"checkJs": true,
 		"esModuleInterop": true,
 		"module": "esnext",
-		"moduleResolution": "nodenext",
+		"moduleResolution": "node",
 		"resolveJsonModule": true,
 		"strict": true,
 		"target": "es2022"

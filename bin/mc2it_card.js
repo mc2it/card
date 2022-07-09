@@ -2,7 +2,7 @@
 import console from "node:console";
 import {program} from "commander";
 import pkg from "../package.json" assert {type: "json"};
-import {getCard} from "../lib/index.js";
+import {getCard} from "../src/index.js";
 
 // Start the application.
 program.name("npx @mc2it/card")
