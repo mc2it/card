@@ -33,11 +33,6 @@ export async function publish() {
 	for (const command of [["tag"], ["push", "origin"]]) await exec("git", [...command, `v${pkg.version}`]);
 }
 
-/** Watches for file changes. */
-export function watch() {
-	return exec("tsc", ["--project", "jsconfig.json", "--watch"]);
-}
-
 /** Runs the default task. */
 export default gulp.series(
 	clean,
