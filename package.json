@@ -12,7 +12,7 @@
 	"author": {
 		"email": "dev@mc2it.com",
 		"name": "MC2IT",
-		"url": "https://mc2it.com"
+		"url": "https://www.mc2it.com"
 	},
 	"bin": {
 		"mc2it": "./bin/mc2it_card.js"

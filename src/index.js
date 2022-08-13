@@ -13,7 +13,7 @@ export function getCard(margin = 0) {
 		`${chalk.white.bold("   Card:")} ${chalk.yellow("npx")} ${chalk.gray("@mc2it/card")}`,
 		`${chalk.white.bold("  Email:")} ${chalk.gray("dev@mc2it.com")}`,
 		`${chalk.white.bold(" GitHub:")} ${chalk.gray("https://github.com/")}${chalk.cyan("mc2it")}`,
-		`${chalk.white.bold("Website:")} ${chalk.gray("https://mc2it.com")}`
+		`${chalk.white.bold("Website:")} ${chalk.gray("https://www.mc2it.com")}`
 	];
 
 	return boxen(buffer.join("\n"), {
