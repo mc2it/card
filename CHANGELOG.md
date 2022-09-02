@@ -1,5 +1,9 @@
 # Changelog
 
+## Version [3.1.1](https://github.com/mc2it/card/compare/v3.1.0...v3.1.1)
+- Dropped the dependency on [Commander.js](https://github.com/tj/commander.js).
+- Fixed a packaging issue.
+
 ## Version [3.1.0](https://github.com/mc2it/card/compare/v3.0.0...v3.1.0)
 - Extracted the main feature to the `getCard()` function.
 
