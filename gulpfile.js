@@ -29,7 +29,8 @@ export async function lint() {
 
 /** Publishes the package in the registry. */
 export async function publish() {
-	for (const registry of ["https://registry.npmjs.org", "https://npm.pkg.github.com"]) await exec("npm", ["publish", `--registry=${registry}`]);
+	const registries = ["https://registry.npmjs.org", "https://git.mc2it.com/api/packages/mc2it/npm/"];
+	for (const registry of registries) await exec("npm", ["publish", `--registry=${registry}`]);
 	for (const command of [["tag"], ["push", "origin"]]) await exec("git", [...command, `v${pkg.version}`]);
 }
 
