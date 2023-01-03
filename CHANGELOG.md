@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [3.1.2](https://github.com/mc2it/card/compare/v3.1.1...v3.1.2)
+- Fixed a packaging issue.
+
 ## Version [3.1.1](https://github.com/mc2it/card/compare/v3.1.0...v3.1.1)
 - Dropped the dependency on [Commander.js](https://github.com/tj/commander.js).
 - Fixed a packaging issue.
