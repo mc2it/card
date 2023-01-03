@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import console from "node:console";
 import {parseArgs} from "node:util";
 import pkg from "../package.json" assert {type: "json"};
