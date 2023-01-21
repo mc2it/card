@@ -19,8 +19,8 @@ Options:
 // Start the application.
 try {
 	const {values} = parseArgs({options: {
-		help: {short: "h", type: "boolean"},
-		version: {short: "v", type: "boolean"}
+		help: {short: "h", type: "boolean", default: false},
+		version: {short: "v", type: "boolean", default: false}
 	}});
 
 	console.log(values.help ? usage.trim() : (values.version ? pkg.version : getCard(1)));
