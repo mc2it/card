@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [4.0.0](https://github.com/mc2it/card/compare/v3.1.2...v4.0.0)
+- Ported the source code to [Haxe](https://haxe.org).
+
 ## Version [3.1.2](https://github.com/mc2it/card/compare/v3.1.1...v3.1.2)
 - Fixed a packaging issue.
 
