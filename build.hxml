@@ -1,0 +1,10 @@
+--class-path src
+--define analyzer-optimize
+--define js-es=6
+--define js-global=global
+--define no-deprecation-warnings
+--js bin/mc2it_card.js
+--library console.hx
+--library hxnodejs
+--library tink_cli
+--main mc2it_card.Program

@@ -1,19 +1,20 @@
 {
 	"bugs": "https://github.com/mc2it/card/issues",
 	"description": "Business card of MC2IT, distribution and services.",
+	"files": [],
 	"homepage": "https://github.com/mc2it/card",
 	"license": "MIT",
 	"name": "@mc2it/card",
 	"repository": "github:mc2it/card",
-	"type": "module",
-	"version": "3.1.2",
+	"type": "commonjs",
+	"version": "4.0.0",
 	"author": {
 		"email": "dev@mc2it.com",
 		"name": "MC2IT",
 		"url": "https://www.mc2it.com"
 	},
 	"bin": {
-		"mc2it": "./bin/mc2it_card.js"
+		"mc2it_card": "./bin/mc2it_card.js"
 	},
 	"contributors": [
 		{
@@ -22,40 +23,20 @@
 			"url": "https://belin.io"
 		}
 	],
-	"dependencies": {
-		"boxen": "^7.0.1",
-		"chalk": "^5.2.0"
-	},
 	"devDependencies": {
-		"@babel/eslint-parser": "^7.19.1",
-		"@babel/plugin-syntax-import-assertions": "^7.20.0",
-		"@types/gulp": "^4.0.10",
-		"@types/node": "^18.11.18",
-		"del": "^7.0.0",
-		"eslint": "^8.33.0",
-		"execa": "^6.1.0",
-		"gulp": "^4.0.2",
-		"typedoc": "^0.23.24",
-		"typescript": "^4.9.5"
+		"esbuild": "^0.17.5",
+		"glob-watcher": "^5.0.5"
 	},
 	"engines": {
 		"node": ">=18.0.0"
 	},
-	"exports": {
-		"types": "./lib/index.d.ts",
-		"import": "./src/index.js"
-	},
-	"files": [
-		"lib/",
-		"src/"
-	],
 	"keywords": [
 		"card",
 		"cli",
 		"mc2it"
 	],
 	"scripts": {
-		"prepack": "gulp",
+		"prepack": "lix Dist",
 		"start": "node bin/mc2it_card.js"
 	}
 }

@@ -3,17 +3,19 @@
 
 *.cjs text
 *.http text
+*.hx text
+*.hxml text
 *.js text
 *.json text
 *.md text
 *.mjs text
-*.ts text
 *.txt text
 *.yaml text
 *.yml text
 
 *.ico binary
 *.jpg binary
+*.n binary
 *.pdf binary
 *.png binary
 *.webp binary
