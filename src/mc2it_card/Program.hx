@@ -5,7 +5,7 @@ import tink.cli.Rest;
 using StringTools;
 using tink.CoreApi;
 
-/** Print the business card of Cédric Belin, full stack developer. **/
+/** Print the business card of MC2IT, distribution and services. **/
 class Program {
 
 	/** The string corresponding to a line break. **/
@@ -35,17 +35,13 @@ class Program {
 		final builder = new CardBuilder()
 			.header()
 				.line()
-					.line("   <light_white>Cédric Belin</>")
-					.line("   <white>Project manager & lead developer at</> <light_white>MC2IT</>")
+					.center("<light_white>MC2IT</> <white>- Distribution & Services</>")
 				.line()
-					.label("GitHub", "<gray>https://github.com/</><cyan>cedx</>")
-					.label("LinkedIn", "<gray>https://linkedin.com/in/</><cyan>cedxmc2it</>")
-					.label("Mastodon", "<gray>https://mastodon.social/</><cyan>@cedx</>")
-					.label("Twitter", "<gray>https://twitter.com/</><cyan>cedxmc2it</>")
+					.label("Card", "<yellow>npx</> <white>@mc2it/card</>")
+					.label("GitHub", "<gray>https://github.com/</><cyan>mc2it</>")
 				.line()
-					.label("Card", "<yellow>npx</> <white>@cedx/card</>")
-					.label("Email", "<white>cedric@mc2it.io</>")
-					.label("Website", "<white>https://mc2it.io</>")
+					.label("Email", "<white>dev@mc2it.com</>")
+					.label("Website", "<white>https://www.mc2it.com</>")
 				.line()
 			.footer();
 
