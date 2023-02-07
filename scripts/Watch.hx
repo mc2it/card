@@ -10,11 +10,10 @@ function main() GlobWatcher.watch("src/mc2it_card/**/*.hx", {ignoreInitial: fals
 	Sys.command("node bin/mc2it_card.js");
 }));
 
-/** Measures the time it takes to run the specified callback function. **/
-private function measureCallback(done: ?JsError -> Void, callback: Callback<Noise>) {
+/** Measures the time it takes to run the specified `callback` function. **/
+private function measureCallback(done: Callback<Null<JsError>>, callback: Callback<Noise>) try {
 	final timestamp = Timer.stamp();
-	final error = try { callback.invoke(Noise); ""; } catch (e) e.message;
-	if (error.length > 0) return done(new JsError(error));
+	callback.invoke(Noise);
 	Sys.println(Tools.formatDuration(Timer.stamp() - timestamp));
-	done();
-}
+	done.invoke(null);
+} catch (e) { done.invoke(new JsError(e.message)); }
