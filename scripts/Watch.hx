@@ -6,8 +6,8 @@ using tink.CoreApi;
 
 /** Runs the script. **/
 function main() GlobWatcher.watch("src/mc2it_card/**/*.hx", {ignoreInitial: false}, done -> measureCallback(done, () -> {
-	Sys.command("haxe build.hxml");
-	Sys.command("node bin/mc2it_card.js");
+	Sys.command("haxe", ["build.hxml"]);
+	Sys.command("node", ["bin/mc2it_card.js");
 }));
 
 /** Measures the time it takes to run the specified `callback` function. **/
