@@ -11,7 +11,7 @@ class Program {
 	/** The string corresponding to a line break. **/
 	public static final newLine = Sys.systemName() == "Windows" ? "\r\n" : "\n";
 
-	/** Output usage information. **/
+	/** Display this help. **/
 	public var help = false;
 
 	/** Output the version number. **/
