@@ -10,14 +10,14 @@ function main() {
 	Sys.command("haxe", ["--define", "doc-gen", "--no-output", "--xml", "var/api.xml", "build.hxml"]);
 	Sys.command("lix", [
 		"run", "dox",
-		"--define", "description", "Business card of Cedric Belin, full stack developer.",
-		"--define", "source-path", "https://github.com/cedx/card/blob/main/src",
-		"--define", "themeColor", "0x772953",
+		"--define", "description", "Business card of MC2IT, distribution and services.",
+		"--define", "source-path", "https://github.com/mc2it/card/blob/main/src",
+		"--define", "themeColor", "0x165898",
 		"--define", "version", Version.packageVersion,
-		"--define", "website", "https://github.com/cedx/card",
+		"--define", "website", "https://github.com/mc2it/card",
 		"--input-path", "var",
 		"--output-path", "docs",
-		"--title", "Cedric Belin's Card",
+		"--title", "MC2IT Card",
 		"--toplevel-package", "mc2it_card"
 	]);
 
