@@ -26,10 +26,10 @@ using tink.CoreApi;
 
 	// Runs this command.
 	@:defaultCommand
-	public function run(rest: Rest<String>): Promise<Noise> {
+	public function run(rest: Rest<String>) {
 		if (help || version) {
 			Sys.println(version ? Version.packageVersion : Cli.getDoc(this));
-			return Noise;
+			return Promise.NOISE;
 		}
 
 		final builder = new CardBuilder()
@@ -48,6 +48,6 @@ using tink.CoreApi;
 		Console.formatMode = AsciiTerminal;
 		Console.logPrefix = "";
 		Console.log('$newLine$builder');
-		return Noise;
+		return Promise.NOISE;
 	}
 }
