@@ -11,7 +11,7 @@ function main() GlobWatcher.watch("src/mc2it_card/**/*.hx", {ignoreInitial: fals
 }));
 
 /** Measures the time it takes to run the specified `callback` function. **/
-private function measureCallback(?done: Callback<Null<JsError>>, callback: Callback<Noise>, ?prompt: String) try {
+private function measureCallback(?done: Callback<Null<JsError>>, ?prompt: String, callback: Callback<Noise>) try {
 	if (prompt != null) Sys.print('$prompt ');
 	final timestamp = Timer.stamp();
 	callback.invoke(Noise);
