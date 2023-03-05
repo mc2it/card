@@ -8,5 +8,5 @@
 --library console.hx
 --library hxnodejs
 --library tink_cli
---macro mc2it_card.Macro.shebang('node')
+--macro mc2it_card.Macro.shebang("node")
 --main mc2it_card.Program
