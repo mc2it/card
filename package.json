@@ -24,7 +24,7 @@
 		}
 	],
 	"devDependencies": {
-		"esbuild": "^0.17.13",
+		"esbuild": "^0.17.14",
 		"glob-watcher": "^5.0.5"
 	},
 	"engines": {
