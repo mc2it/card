@@ -8,5 +8,5 @@
 	"releasenote": "Ported the source code to Haxe.",
 	"tags": ["card", "cli", "mc2it"],
 	"url": "https://github.com/mc2it/card",
-	"version": "4.0.0"
+	"version": "4.1.0"
 }
