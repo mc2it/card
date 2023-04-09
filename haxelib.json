@@ -5,7 +5,7 @@
 	"description": "Business card of MC2IT, distribution and services.",
 	"license": "MIT",
 	"name": "mc2it_card",
-	"releasenote": "Ported the source code to Haxe.",
+	"releasenote": "Updated the package dependencies.",
 	"tags": ["card", "cli", "mc2it"],
 	"url": "https://mc2it.github.io/card",
 	"version": "4.1.0"
