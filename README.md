@@ -21,10 +21,10 @@ npx @mc2it/card
 And voila!
 
 ## See also
-- [API reference](https://mc2it.github.io/card)
+- [API reference](https://mc2it.github.io/card/api)
 - [Git repository](https://github.com/mc2it/card)
 - [npm package](https://www.npmjs.com/package/@mc2it/card)
 - [Submit an issue](https://github.com/mc2it/card/issues)
 
 ## License
-[MC2IT Card](https://github.com/mc2it/card) is distributed under the MIT License.
+[MC2IT Card](https://mc2it.github.io/card) is distributed under the MIT License.

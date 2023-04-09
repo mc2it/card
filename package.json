@@ -2,7 +2,7 @@
 	"bugs": "https://github.com/mc2it/card/issues",
 	"description": "Business card of MC2IT, distribution and services.",
 	"files": [],
-	"homepage": "https://github.com/mc2it/card",
+	"homepage": "https://mc2it.github.io/card",
 	"license": "MIT",
 	"name": "@mc2it/card",
 	"repository": "github:mc2it/card",
