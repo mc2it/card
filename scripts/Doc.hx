@@ -5,7 +5,7 @@ import sys.io.File;
 
 /** Builds the documentation. **/
 function main() {
-	if (FileSystem.exists("docs")) Tools.removeDirectory("docs");
+	if (FileSystem.exists("docs/api")) Tools.removeDirectory("docs/api");
 
 	Sys.command("haxe --define doc-gen --no-output --xml var/api.xml build.hxml");
 	Sys.command("lix", ["run", "dox",
@@ -13,12 +13,12 @@ function main() {
 		"--define", "source-path", "https://github.com/mc2it/card/blob/main/src",
 		"--define", "themeColor", "0x165898",
 		"--define", "version", Version.packageVersion,
-		"--define", "website", "https://github.com/mc2it/card",
+		"--define", "website", "https://mc2it.github.io/card",
 		"--input-path", "var",
-		"--output-path", "docs",
+		"--output-path", "docs/api",
 		"--title", "MC2IT Card",
 		"--toplevel-package", "mc2it_card"
 	]);
 
-	File.copy("www/favicon.ico", "docs/favicon.ico");
+	File.copy("docs/favicon.ico", "docs/api/favicon.ico");
 }
