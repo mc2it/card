@@ -16,5 +16,5 @@ private function measureCallback(?done: Callback<Null<JsError>>, ?prompt: String
 	final timestamp = Timer.stamp();
 	callback.invoke(Noise);
 	Sys.println('> ${Tools.formatDuration(Timer.stamp() - timestamp)}');
-	if (done != null) done.invoke(null);
+	done?.invoke(null);
 } catch (e) { done != null ? done.invoke(new JsError(e.message)) : throw e; }

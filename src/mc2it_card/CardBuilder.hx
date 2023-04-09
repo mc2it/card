@@ -38,7 +38,7 @@ abstract CardBuilder(StringBuf) from StringBuf {
 	/** Appends a line of plain text. **/
 	function addLine(text: String) {
 		this.add('$indent$text${Program.newLine}');
-		return (this: CardBuilder);
+		return abstract;
 	}
 
 	/** Gets the length in characters of the specified text, excluding formatting tags. **/
