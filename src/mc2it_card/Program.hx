@@ -5,7 +5,11 @@ import tink.cli.Rest;
 using StringTools;
 using tink.CoreApi;
 
-/** Print the business card of MC2IT, distribution and services. **/
+/**
+	Print the business card of MC2IT, distribution and services.
+
+	> npx @mc2it/card [flags]
+**/
 @:noDoc final class Program {
 
 	/** The string corresponding to a line break. **/
