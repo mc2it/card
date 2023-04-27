@@ -1,7 +1,6 @@
-//! --class-path src --define hxnodejs --library hxnodejs --library tink_core
+//! --class-path src --define hxnodejs --library hxnodejs
 import haxe.Timer;
 import js.glob_watcher.GlobWatcher;
-using tink.CoreApi;
 
 /** Watches for file changes. **/
 function main() GlobWatcher.watch("src/mc2it_card/**/*.hx", {ignoreInitial: false}, done -> {

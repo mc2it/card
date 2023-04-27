@@ -13,7 +13,7 @@ abstract CardBuilder(StringBuf) from StringBuf {
 	static inline final width = 39;
 
 	/** Creates a new string buffer. **/
-	public function new() this = new StringBuf();
+	public inline function new() this = new StringBuf();
 
 	/** Appends a centered line of text. **/
 	public function center(text: String)
