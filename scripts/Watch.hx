@@ -1,4 +1,4 @@
-//! --class-path src --define hxnodejs --library hxnodejs
+//! --class-path src --define hxnodejs --define no-deprecation-warnings --library hxnodejs
 import haxe.Timer;
 import js.glob_watcher.GlobWatcher;
 
