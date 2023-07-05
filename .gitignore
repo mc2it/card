@@ -1,5 +1,5 @@
 /**/.DS_Store
-/bin/*.map
+/bin/
 /node_modules/
 /npm-debug.log
 /res/
