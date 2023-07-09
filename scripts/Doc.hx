@@ -1,5 +1,5 @@
 //! --class-path src
-import mc2it_card.Version;
+import mc2it_card.Platform;
 import sys.FileSystem;
 import sys.io.File;
 using Lambda;
@@ -14,7 +14,7 @@ function main() {
 		"--define", "description", "Business card of MC2IT, distribution and services.",
 		"--define", "source-path", "https://github.com/mc2it/card/blob/main/src",
 		"--define", "themeColor", "0x165898",
-		"--define", "version", Version.packageVersion,
+		"--define", "version", Platform.packageVersion,
 		"--define", "website", "https://mc2it.github.io/card",
 		"--input-path", "var",
 		"--output-path", "docs/api",
