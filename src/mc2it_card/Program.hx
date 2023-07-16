@@ -1,7 +1,6 @@
 package mc2it_card;
 
 import tink.Cli;
-import tink.cli.Rest;
 using StringTools;
 using tink.CoreApi;
 
@@ -30,7 +29,7 @@ using tink.CoreApi;
 
 	// Runs this command.
 	@:defaultCommand
-	public function run(rest: Rest<String>) {
+	public function run() {
 		if (help || version) {
 			Sys.println(version ? Platform.packageVersion : Cli.getDoc(this));
 			return Promise.NOISE;
