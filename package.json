@@ -5,7 +5,7 @@
 	"homepage": "https://mc2it.github.io/card",
 	"license": "MIT",
 	"name": "@mc2it/card",
-	"repository": "github:mc2it/card",
+	"repository": "mc2it/card",
 	"type": "commonjs",
 	"version": "4.1.0",
 	"author": {
