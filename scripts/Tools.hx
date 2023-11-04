@@ -11,12 +11,10 @@ function cleanDirectory(directory: String) for (entry in FileSystem.readDirector
 
 /** Formats the specified `duration` in seconds. **/
 function formatDuration(duration: Float) {
-	final operand = Math.pow(10, 3);
-	final timestamp = Math.round(duration * operand) / operand;
-
+	final timestamp = Math.round(duration * 1_000) / 1_000;
 	final seconds = Std.int(timestamp);
 	final milliseconds = Std.int((timestamp - seconds).seconds());
-	return seconds > 1 ? '${seconds}s ${milliseconds}ms' : '${milliseconds}ms';
+	return seconds > 0 ? '${seconds}s ${milliseconds}ms' : '${milliseconds}ms';
 }
 
 /** Recursively deletes the specified `directory`. **/
