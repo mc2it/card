@@ -6,8 +6,8 @@
 	"license": "MIT",
 	"name": "@mc2it/card",
 	"repository": "mc2it/card",
-	"type": "commonjs",
-	"version": "4.1.0",
+	"type": "module",
+	"version": "5.0.0",
 	"author": {
 		"email": "dev@mc2it.com",
 		"name": "MC2IT",
@@ -24,8 +24,13 @@
 		}
 	],
 	"devDependencies": {
+		"@types/node": "^20.11.5",
+		"boxen": "^7.1.1",
+		"chalk": "^5.3.0",
 		"esbuild": "^0.19.11",
-		"glob-watcher": "^6.0.0"
+		"eslint": "^8.56.0",
+		"typedoc": "^0.25.7",
+		"typescript": "^5.3.3"
 	},
 	"engines": {
 		"node": ">=20.0.0"

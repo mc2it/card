@@ -1,0 +1,16 @@
+{
+	"include": ["bin/*.js", "scripts/*.js", "src/**/*.ts"],
+	"compilerOptions": {
+		"allowJs": true,
+		"baseUrl": ".",
+		"checkJs": true,
+		"esModuleInterop": true,
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"noEmit": true,
+		"resolveJsonModule": true,
+		"paths": {"@mc2it/card": ["src"]},
+		"strict": true,
+		"target": "ESNext"
+	}
+}
