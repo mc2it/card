@@ -2,21 +2,23 @@
 .* text
 
 *.cjs text
+*.css text diff=css
+*.html text diff=html
 *.http text
-*.hx text
-*.hxml text
 *.js text
 *.json text
-*.md text
+*.md text diff=markdown
 *.mjs text
 *.ps1 text
+*.svg text
+*.ts text
 *.txt text
 *.yaml text
 *.yml text
 
 *.ico binary
 *.jpg binary
-*.n binary
 *.pdf binary
 *.png binary
 *.webp binary
+*.woff2 binary
