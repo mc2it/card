@@ -50,13 +50,13 @@
 		"mc2it"
 	],
 	"scripts": {
-		"build": "tsc --project src/tsconfig.json",
+		"build": "tsc --project src/tsconfig.json && esbuild --allow-overwrite --bundle --format=esm --legal-comments=none --log-level=warning --minify --outfile=bin/mc2it_card.js --platform=node src/cli.ts",
 		"clean": "node tool/clean.js",
-		"dist": "npm run clean && npm run build",
+		"dist": "npm run clean && npm run build && node tool/dist.js && git update-index --chmod=+x bin/mc2it_card.js",
 		"doc": "typedoc --options etc/typedoc.json && node tool/doc.js",
 		"lint": "tsc --project tsconfig.json && eslint --config=etc/eslint.json src tool",
 		"postpublish": "node tool/publish.js",
 		"prepack": "npm run dist",
-		"start": "node bin/mc2it_card.js"
+		"start": "npm run build && node bin/mc2it_card.js"
 	}
 }
