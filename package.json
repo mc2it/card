@@ -24,8 +24,8 @@
 	],
 	"devDependencies": {
 		"@types/node": "^20.11.5",
-		"@typescript-eslint/eslint-plugin": "^6.19.0",
-		"@typescript-eslint/parser": "^6.19.0",
+		"@typescript-eslint/eslint-plugin": "^6.19.1",
+		"@typescript-eslint/parser": "^6.19.1",
 		"boxen": "^7.1.1",
 		"chalk": "^5.3.0",
 		"esbuild": "^0.19.11",
@@ -51,11 +51,11 @@
 	],
 	"scripts": {
 		"build": "tsc --project src/tsconfig.json",
-		"clean": "node scripts/clean.js",
+		"clean": "node tool/clean.js",
 		"dist": "npm run clean && npm run build",
-		"doc": "typedoc --options etc/typedoc.json && node scripts/doc.js",
-		"lint": "tsc --project tsconfig.json && eslint --config=etc/eslint.json scripts src",
-		"postpublish": "node scripts/publish.js",
+		"doc": "typedoc --options etc/typedoc.json && node tool/doc.js",
+		"lint": "tsc --project tsconfig.json && eslint --config=etc/eslint.json src tool",
+		"postpublish": "node tool/publish.js",
 		"prepack": "npm run dist",
 		"start": "node bin/mc2it_card.js"
 	}
