@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [5.0.0](https://github.com/mc2it/card/compare/v4.1.0...v5.0.0)
+- Ported the source code to [TypeScript](https://www.typescriptlang.org).
+
 ## Version [4.1.0](https://github.com/mc2it/card/compare/v4.0.0...v4.1.0)
 - Updated the package dependencies.
 

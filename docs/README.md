@@ -1,5 +1,6 @@
-# MC2IT Card
-Business card of MC2IT, distribution and services, implemented in [TypeScript](https://www.typescriptlang.org).
+# Cédric Belin's Card
+Business card of Cédric Belin, yet another full stack developer,
+addicted to [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript) and [PHP](https://www.php.net).
 
 ## Usage
 Before you start, you need to make sure you have [Node.js](https://nodejs.org) up and running.
@@ -13,12 +14,12 @@ node --version
 Then, to display the business card, just type the following command in your terminal:
 
 ```shell
-npx @mc2it/card
+npx @cedx/card
 ```
 
 And voila!
 
 ## See also
-- [Git repository](https://github.com/mc2it/card)
-- [npm package](https://www.npmjs.com/package/@mc2it/card)
-- [Submit an issue](https://github.com/mc2it/card/issues)
+- [Git repository](https://github.com/cedx/card)
+- [npm package](https://www.npmjs.com/package/@cedx/card)
+- [Submit an issue](https://github.com/cedx/card/issues)
