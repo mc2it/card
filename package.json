@@ -53,8 +53,8 @@
 		"build": "tsc --project src/tsconfig.json && esbuild --allow-overwrite --bundle --format=esm --legal-comments=none --log-level=warning --minify --outfile=bin/mc2it_card.js --platform=node src/cli.ts",
 		"clean": "node tool/clean.js",
 		"dist": "npm run clean && npm run build && node tool/dist.js && git update-index --chmod=+x bin/mc2it_card.js",
-		"doc": "typedoc --options etc/typedoc.json && node tool/doc.js",
-		"lint": "tsc --project tsconfig.json && eslint --config=etc/eslint.json src tool",
+		"doc": "typedoc --options etc/typedoc.js && node tool/doc.js",
+		"lint": "tsc --project tsconfig.json && eslint --config=etc/eslint.cjs src tool",
 		"postpublish": "node tool/publish.js",
 		"prepack": "npm run dist",
 		"start": "npm run build && node bin/mc2it_card.js"
