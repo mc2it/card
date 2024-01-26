@@ -1,7 +1,7 @@
 import console from "node:console";
 import {parseArgs} from "node:util";
 import pkg from "../../package.json" with {type: "json"};
-import {getCard} from "../card.js";
+import {getCard} from "../index.js";
 import usage from "./usage.js";
 
 /**
