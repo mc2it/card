@@ -9,6 +9,7 @@
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
 		"noEmit": true,
+		"noImplicitOverride": true,
 		"resolveJsonModule": true,
 		"paths": {"@mc2it/card": ["src"]},
 		"strict": true,
