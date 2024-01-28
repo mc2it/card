@@ -52,9 +52,9 @@
 		"mc2it"
 	],
 	"scripts": {
-		"build": "tsc --project src/tsconfig.json && esbuild --allow-overwrite --bundle --format=esm --legal-comments=none --log-level=warning --minify --outfile=bin/mc2it_card.js --platform=node src/cli/main.ts",
+		"build": "tsc --project src/tsconfig.json && esbuild \"--banner:js=#/usr/bin/env node\" --bundle --format=esm --legal-comments=none --log-level=warning --minify --outfile=bin/mc2it_card.js --platform=node src/cli/main.ts",
 		"clean": "node tool/clean.js",
-		"dist": "npm run clean && npm run build && node tool/dist.js && git update-index --chmod=+x bin/mc2it_card.js",
+		"dist": "npm run clean && npm run build && git update-index --chmod=+x bin/mc2it_card.js",
 		"doc": "typedoc --options etc/typedoc.js && node tool/doc.js",
 		"lint": "tsc --project tsconfig.json && eslint --config=etc/eslint.cjs src tool",
 		"postpublish": "node tool/publish.js",
