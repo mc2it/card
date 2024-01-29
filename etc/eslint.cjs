@@ -190,7 +190,7 @@ module.exports = {
 		"@typescript-eslint/naming-convention": "off",
 		"@typescript-eslint/no-array-delete": "error",
 		"@typescript-eslint/no-confusing-non-null-assertion": "error",
-		"@typescript-eslint/no-confusing-void-expression": ["error", {ignoreArrowShorthand: true}],
+		"@typescript-eslint/no-confusing-void-expression": "off",
 		"@typescript-eslint/no-dupe-class-members": "error",
 		"@typescript-eslint/no-dynamic-delete": "error",
 		"@typescript-eslint/no-empty-function": "error",
