@@ -6,11 +6,15 @@ module.exports = {
 	},
 	extends: [
 		"eslint:recommended",
-		"plugin:@typescript-eslint/recommended"
+		"plugin:@typescript-eslint/recommended-type-checked"
 	],
 	overrides: [
 		{
-			files: ["*.cjs", "*.js", "*.mjs"],
+			files: ["test/**/*.js"],
+			rules: {"@typescript-eslint/no-floating-promises": "off"}
+		},
+		{
+			files: ["*.{cjs,js,mjs}"],
 			rules: {
 				"@typescript-eslint/explicit-function-return-type": "off",
 				"@typescript-eslint/explicit-module-boundary-types": "off"
@@ -135,7 +139,7 @@ module.exports = {
 		"no-useless-rename": "error",
 		"no-useless-return": "error",
 		"no-var": "error",
-		"no-void": "error",
+		"no-void": ["error", {allowAsStatement: true}],
 		"no-warning-comments": "warn",
 		"object-shorthand": "error",
 		"one-var": ["error", "never"],
