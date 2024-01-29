@@ -10,15 +10,15 @@ module.exports = {
 	],
 	overrides: [
 		{
-			files: ["test/**/*.js"],
-			rules: {"@typescript-eslint/no-floating-promises": "off"}
-		},
-		{
 			files: ["*.{cjs,js,mjs}"],
 			rules: {
 				"@typescript-eslint/explicit-function-return-type": "off",
 				"@typescript-eslint/explicit-module-boundary-types": "off"
 			}
+		},
+		{
+			files: ["test/**/*.js"],
+			rules: {"@typescript-eslint/no-floating-promises": "off"}
 		}
 	],
 	parser: "@typescript-eslint/parser",
@@ -247,6 +247,7 @@ module.exports = {
 		"@typescript-eslint/prefer-ts-expect-error": "error",
 		"@typescript-eslint/promise-function-async": "off",
 		"@typescript-eslint/require-array-sort-compare": "error",
+		"@typescript-eslint/restrict-template-expressions": "off",
 		"@typescript-eslint/return-await": "error",
 		"@typescript-eslint/sort-type-constituents": "error",
 		"@typescript-eslint/strict-boolean-expressions": "off",
