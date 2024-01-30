@@ -23,4 +23,4 @@ Usage:
 Options:
   -h, --help     Display this help.
   -v, --version  Output the version number.
-`;function s0(){let{values:u}=l0({options:{help:{short:"h",type:"boolean",default:!1},version:{short:"v",type:"boolean",default:!1}}});return nu.log(u.help?Eu.trim():u.version?lD.version:ru(1)),0}try{process.exitCode=s0()}catch(u){nu.error(u instanceof Error?u.message:u),process.exitCode=1}
+`;function s0(){let{values:u}=l0({options:{help:{short:"h",type:"boolean",default:!1},version:{short:"v",type:"boolean",default:!1}}});nu.log(u.help?Eu.trim():u.version?lD.version:ru(1))}try{s0()}catch(u){nu.error(u instanceof Error?u.message:u),process.exitCode=1}
