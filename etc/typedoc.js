@@ -8,6 +8,5 @@ export default {
 	hideGenerator: true,
 	name: "MC2IT Card",
 	out: "../docs/api",
-	readme: "none",
-	tsconfig: "../src/tsconfig.json"
+	readme: "none"
 };
