@@ -56,7 +56,7 @@
 		"clean": "node tool/clean.js",
 		"dist": "npm run clean && npm run build && git update-index --chmod=+x bin/mc2it_card.js",
 		"doc": "typedoc --options etc/typedoc.js && node tool/doc.js",
-		"lint": "tsc --project tsconfig.json && eslint --config=etc/eslint.config.js src tool",
+		"lint": "tsc --project tsconfig.json && eslint --config=etc/eslint.config.js etc src tool",
 		"postpublish": "node tool/publish.js",
 		"prepack": "npm run dist",
 		"start": "npm run build && node bin/mc2it_card.js",
