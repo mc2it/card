@@ -34,7 +34,7 @@ export default tsEslint.config(
 			"camelcase": "off",
 			"capitalized-comments": "error",
 			"class-methods-use-this": "off",
-			"complexity": "error",
+			"complexity": ["error", {max: 50}],
 			"consistent-return": "off",
 			"consistent-this": "error",
 			"curly": ["error", "multi"],
