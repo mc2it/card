@@ -86,7 +86,7 @@ export default tsEslint.config(
 			"no-labels": "error",
 			"no-lone-blocks": "error",
 			"no-lonely-if": "error",
-			"no-loop-func": "error",
+			"no-loop-func": "off",
 			"no-magic-numbers": "off",
 			"no-multi-assign": ["error", {ignoreNonDeclaration: true}],
 			"no-multi-str": "error",
