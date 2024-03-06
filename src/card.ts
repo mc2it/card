@@ -1,5 +1,7 @@
+/* eslint-disable @typescript-eslint/no-unsafe-call */
+// @ts-expect-error TS2305
+import {styleText} from "node:util";
 import boxen from "boxen";
-import chalk from "chalk";
 
 /**
  * Returns the card content.
@@ -8,13 +10,13 @@ import chalk from "chalk";
  */
 export function getCard(margin = 0): string {
 	const buffer = [
-		`${chalk.white.bold(" MC2IT")} ${chalk.white("- Distribution & Services")}`,
+		`${styleText("white", styleText("bold", " MC2IT"))} ${styleText("white", "- Distribution & Services")}`,
 		"",
-		`${chalk.white.bold(" GitHub:")} ${chalk.gray("https://github.com/")}${chalk.cyan("mc2it")}`,
+		`${styleText("white", styleText("bold", " GitHub:"))} ${styleText("gray", "https://github.com/")}${styleText("cyan", "mc2it")}`,
 		"",
-		`${chalk.white.bold("   Card:")} ${chalk.yellow("npx")} ${chalk.white("@mc2it/card")}`,
-		`${chalk.white.bold("  Email:")} ${chalk.white("dev@mc2it.com")}`,
-		`${chalk.white.bold("Website:")} ${chalk.white("https://www.mc2it.com")}`
+		`${styleText("white", styleText("bold", "   Card:"))} ${styleText("yellow", "npx")} ${styleText("white", "@mc2it/card")}`,
+		`${styleText("white", styleText("bold", "  Email:"))} ${styleText("white", "dev@mc2it.com")}`,
+		`${styleText("white", styleText("bold", "Website:"))} ${styleText("white", "https://www.mc2it.com")}`
 	];
 
 	return boxen(buffer.join("\n"), {
