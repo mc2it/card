@@ -196,5 +196,13 @@ export default tsEslint.config(
 			"@typescript-eslint/switch-exhaustiveness-check": "error",
 			"@typescript-eslint/typedef": "error"
 		}
+	},
+	{
+		files: ["gulpfile.js", "etc/*.js"],
+		rules: {
+			"prefer-arrow-callback": "off",
+			"@typescript-eslint/explicit-function-return-type": "off",
+			"@typescript-eslint/explicit-module-boundary-types": "off"
+		}
 	}
 );
