@@ -1,0 +1,50 @@
+site_name: MC2IT Card
+site_url: https://docs.mc2it.com/card
+site_author: MC2IT - contact@mc2it.com
+site_description: Business card of MC2IT, distribution and services.
+
+docs_dir: ../docs
+site_dir: ../www
+use_directory_urls: false
+
+edit_uri: edit/main/docs/
+repo_name: mc2it/card
+repo_url: https://github.com/mc2it/card
+
+copyright: Copyright &copy; MC2IT
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/mc2it
+      name: GitHub
+
+extra_css:
+  - styles.css
+
+markdown_extensions:
+  - admonition
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - API reference: api/
+  - See also:
+      - Changelog: changelog.md
+      - License: license.md
+
+theme:
+  favicon: favicon.ico
+  features:
+    - content.code.copy
+    - content.tooltips
+    - navigation.footer
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.sections
+    - search.suggest
+  font: false
+  logo: logo.svg
+  name: material
+  palette:
+    accent: custom
+    primary: custom
