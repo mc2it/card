@@ -1,4 +1,5 @@
 import console from "node:console";
+import {exit} from "node:process";
 import {parseArgs} from "node:util";
 import pkg from "../package.json" with {type: "json"};
 import {getCard} from "./card.js";
@@ -33,5 +34,5 @@ function main(): void {
 try { main(); }
 catch (error) {
 	console.error(error instanceof Error ? error.message : error);
-	process.exitCode = 1;
+	exit(1);
 }
