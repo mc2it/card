@@ -1,28 +1,17 @@
 import {cp} from "node:fs/promises";
-import {env} from "node:process";
 import {deleteAsync} from "del";
-import esbuild from "esbuild";
 import {$} from "execa";
 import gulp from "gulp";
 import pkg from "./package.json" with {type: "json"};
-import buildOptions from "./etc/esbuild.js";
 
 // Builds the project.
-export async function build() {
-	await $`tsc --project src`;
-	return esbuild.build(buildOptions());
+export function build() {
+	return $`tsc --project src/jsconfig.json`;
 }
 
 // Deletes all generated files.
 export function clean() {
-	return deleteAsync(["bin/*.map", "lib", "var/**/*", "www"]);
-}
-
-// Packages the application.
-export async function dist() {
-	env.NODE_ENV = "production";
-	await build();
-	return $`git update-index --chmod=+x bin/mc2it_card.js`;
+	return deleteAsync(["lib", "var/**/*", "www"]);
 }
 
 // Builds the documentation.
@@ -33,7 +22,7 @@ export async function doc() {
 
 // Performs the static analysis of source code.
 export async function lint() {
-	await $`tsc --project .`;
+	await $`tsc --project jsconfig.json`;
 	return $`eslint --config=etc/eslint.config.js gulpfile.js etc src`;
 }
 
@@ -48,16 +37,8 @@ export async function serve() {
 	return $({stdio: "inherit"})`mkdocs serve --config-file=etc/mkdocs.yaml`;
 }
 
-// Watches for file changes.
-export async function watch() {
-	const context = await esbuild.context(buildOptions());
-	gulp.watch("src/**/*.ts", {ignoreInitial: false}, function buildCli() {
-		return context.rebuild();
-	});
-}
-
 // The default task.
 export default gulp.series(
 	clean,
-	dist
+	build
 );

@@ -1,14 +1,13 @@
 {
-	"include": ["*.js", "etc/*.js", "src/**/*.ts"],
+	"exclude": ["etc/eslint.config.js"],
+	"include": ["*.js", "etc/*.js", "src/**/*.js"],
 	"compilerOptions": {
-		"allowJs": true,
 		"baseUrl": ".",
 		"checkJs": true,
 		"esModuleInterop": true,
 		"isolatedModules": true,
 		"module": "NodeNext",
 		"moduleResolution": "NodeNext",
-		"noEmit": true,
 		"noImplicitOverride": true,
 		"resolveJsonModule": true,
 		"strict": true,

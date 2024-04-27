@@ -1,14 +1,13 @@
-/* eslint-disable @typescript-eslint/no-unsafe-call */
 // @ts-expect-error TS2305 Node.js typings are not yet up to date.
 import {styleText} from "node:util";
 import boxen from "boxen";
 
 /**
  * Returns the card content.
- * @param margin The margin size.
- * @returns The card content.
+ * @param {number} margin The margin size.
+ * @returns {string} The card content.
  */
-export function getCard(margin = 0): string {
+export function getCard(margin = 0) {
 	const buffer = [
 		`${styleText("white", styleText("bold", " MC2IT"))} ${styleText("white", "- Distribution & Services")}`,
 		"",
