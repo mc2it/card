@@ -17,7 +17,7 @@ Options:
   -v, --version  Output the version number.
 `;
 
-// Application entry point.
+// Start the application.
 try {
 	const {values} = parseArgs({options: {
 		help: {short: "h", type: "boolean", default: false},

@@ -9,5 +9,5 @@ export default {
 	name: "MC2IT Card",
 	out: "../docs/api",
 	readme: "none",
-	tsconfig: "../src/jsconfig.json"
+	tsconfig: "../src/tsconfig.json"
 };
