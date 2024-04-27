@@ -1,5 +1,5 @@
 # MC2IT Card
-Business card of MC2IT, distribution and services, implemented in [TypeScript](https://www.typescriptlang.org).
+Business card of MC2IT, distribution and services, implemented in [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript).
 
 ## Usage
 Before you start, you need to make sure you have [Node.js](https://nodejs.org) up and running.
