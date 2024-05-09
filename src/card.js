@@ -1,4 +1,3 @@
-// @ts-expect-error TS2305 Node.js typings are not yet up to date.
 import {styleText} from "node:util";
 import boxen from "boxen";
 
