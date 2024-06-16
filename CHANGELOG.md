@@ -1,7 +1,7 @@
 # Changelog
 
 ## Version [5.0.1](https://github.com/mc2it/card/compare/v5.0.0...v5.0.1)
-- Migrated the documentation to the [GitHub wiki](https://github.com/cedx/akismet.js/wiki).
+- Migrated the documentation to the [GitHub wiki](https://github.com/mc2it/card/wiki).
 
 ## Version [5.0.0](https://github.com/mc2it/card/compare/v4.1.0...v5.0.0)
 - Ported the source code to [TypeScript](https://www.typescriptlang.org).
