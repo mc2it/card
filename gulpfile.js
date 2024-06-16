@@ -1,4 +1,3 @@
-import {cp} from "node:fs/promises";
 import {deleteAsync} from "del";
 import {$} from "execa";
 import gulp from "gulp";
@@ -14,12 +13,6 @@ export function clean() {
 	return deleteAsync(["lib", "var/**/*", "www"]);
 }
 
-// Builds the documentation.
-export async function doc() {
-	for (const file of ["CHANGELOG.md", "LICENSE.md"]) await cp(file, `docs/${file.toLowerCase()}`);
-	return $`typedoc --options etc/typedoc.js`;
-}
-
 // Performs the static analysis of source code.
 export async function lint() {
 	await $`tsc --project tsconfig.json`;
@@ -29,12 +22,6 @@ export async function lint() {
 // Publishes the package.
 export async function publish() {
 	for (const action of [["tag"], ["push", "origin"]]) await $`git ${action} v${pkg.version}`;
-}
-
-// Starts the development server.
-export async function serve() {
-	await doc();
-	return $({stdio: "inherit"})`mkdocs serve --config-file=etc/mkdocs.yaml`;
 }
 
 // The default task.

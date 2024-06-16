@@ -1,9 +1,0 @@
-:root {
-	--md-primary-fg-color: #165898;
-	--md-accent-fg-color: var(--md-primary-fg-color);
-}
-
-body {
-	--md-code-font-family: ui-monospace, monospace;
-	--md-text-font-family: ui-sans-serif, sans-serif;
-}
