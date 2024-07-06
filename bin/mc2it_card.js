@@ -1,9 +1,12 @@
 #!/usr/bin/env node
 import console from "node:console";
-import {exit} from "node:process";
+import process from "node:process";
 import {parseArgs} from "node:util";
 import pkg from "../package.json" with {type: "json"};
 import {getCard} from "../src/index.js";
+
+// Give the process a friendly name.
+process.title = "MC2IT Card";
 
 // The usage information.
 const usage = `
@@ -28,5 +31,5 @@ try {
 }
 catch (error) {
 	console.error(error instanceof Error ? error.message : error);
-	exit(1);
+	process.exit(1);
 }
