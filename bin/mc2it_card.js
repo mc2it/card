@@ -3,7 +3,7 @@ import console from "node:console";
 import process from "node:process";
 import {parseArgs} from "node:util";
 import pkg from "../package.json" with {type: "json"};
-import {getCard} from "../src/index.js";
+import {getCard} from "../lib/index.js";
 
 // Give the process a friendly name.
 process.title = "MC2IT Card";
