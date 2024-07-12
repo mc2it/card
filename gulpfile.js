@@ -1,7 +1,10 @@
 import {deleteAsync} from "del";
-import {$} from "execa";
+import {execa} from "execa";
 import gulp from "gulp";
 import pkg from "./package.json" with {type: "json"};
+
+// Runs a command.
+const $ = execa({preferLocal: true, stdio: "inherit"});
 
 // Builds the project.
 export function build() {
@@ -15,8 +18,9 @@ export function clean() {
 
 // Performs the static analysis of source code.
 export async function lint() {
+	await build();
 	await $`tsc --project tsconfig.json`;
-	return $`eslint --config=etc/eslint.config.js gulpfile.js bin src`;
+	return $`eslint --config=etc/eslint.js gulpfile.js bin src`;
 }
 
 // Publishes the package.
