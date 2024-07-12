@@ -2,8 +2,8 @@
 import console from "node:console";
 import process from "node:process";
 import {parseArgs} from "node:util";
+import card from "../lib/index.js";
 import pkg from "../package.json" with {type: "json"};
-import {getCard} from "../lib/index.js";
 
 // Give the process a friendly name.
 process.title = "MC2IT Card";
@@ -27,7 +27,7 @@ try {
 		version: {short: "v", type: "boolean", default: false}
 	}});
 
-	console.log(values.help ? usage.trim() : values.version ? pkg.version : getCard(1));
+	console.log(values.help ? usage.trim() : values.version ? pkg.version : card(1));
 }
 catch (error) {
 	console.error(error instanceof Error ? error.message : error);
