@@ -23,23 +23,22 @@
 		}
 	],
 	"devDependencies": {
-		"@babel/eslint-parser": "^7.24.7",
-		"@babel/plugin-syntax-import-attributes": "^7.24.7",
+		"@types/eslint__js": "^8.42.3",
 		"@types/gulp": "^4.0.17",
 		"@types/node": "^20.14.10",
 		"boxen": "^7.1.1",
 		"del": "^7.1.0",
-		"eslint": "^9.6.0",
 		"execa": "^9.3.0",
 		"gulp": "^5.0.0",
-		"typescript": "^5.5.3"
+		"typescript": "^5.5.3",
+		"typescript-eslint": "^8.0.0-alpha.41"
 	},
 	"engines": {
 		"node": ">=22.0.0"
 	},
 	"exports": {
 		"types": "./lib/index.d.ts",
-		"default": "./src/index.js"
+		"default": "./lib/index.js"
 	},
 	"files": [
 		"lib/",
@@ -53,6 +52,6 @@
 	"scripts": {
 		"postpublish": "gulp publish",
 		"prepack": "gulp",
-		"start": "node bin/mc2it_card.js"
+		"start": "gulp build && node bin/mc2it_card.js"
 	}
 }
