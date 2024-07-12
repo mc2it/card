@@ -3,10 +3,10 @@ import boxen from "boxen";
 
 /**
  * Returns the card content.
- * @param {number} margin The margin size.
- * @returns {string} The card content.
+ * @param margin The margin size.
+ * @returns The card content.
  */
-export function getCard(margin = 0) {
+export function getCard(margin = 0): string {
 	const buffer = [
 		`${styleText("white", styleText("bold", " MC2IT"))} ${styleText("white", "- Distribution & Services")}`,
 		"",
