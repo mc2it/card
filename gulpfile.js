@@ -28,6 +28,11 @@ export async function publish() {
 	for (const action of [["tag"], ["push", "origin"]]) await $`git ${action} v${pkg.version}`;
 }
 
+// Watches for file changes.
+export async function watch() {
+	return $`tsc --sourceMap --watch --project src/tsconfig.json`;
+}
+
 // The default task.
 export default gulp.series(
 	clean,
