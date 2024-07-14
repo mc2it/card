@@ -33,7 +33,7 @@ export async function watch() {
 	const execaNode = execa({node: true, nodeOptions: ["--enable-source-maps"], reject: false, stdio: "inherit"});
 	await build();
 
-	gulp.watch(["bin/*.js", "src/**/*.ts"], async function restart() {
+	gulp.watch(["bin/*.js", "src/**/*.ts"], async function buildApp() {
 		await $`tsc --sourceMap --project src/tsconfig.json`;
 		return execaNode(pkg.bin.mc2it_card);
 	});
