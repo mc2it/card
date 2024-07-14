@@ -30,7 +30,13 @@ export async function publish() {
 
 // Watches for file changes.
 export async function watch() {
-	return $`tsc --sourceMap --watch --project src/tsconfig.json`;
+	const execaNode = execa({node: true, nodeOptions: ["--enable-source-maps"], reject: false, stdio: "inherit"});
+	await build();
+
+	gulp.watch(["bin/*.js", "src/**/*.ts"], async function restart() {
+		await $`tsc --sourceMap --project src/tsconfig.json`;
+		return execaNode(pkg.bin.mc2it_card);
+	});
 }
 
 // The default task.
