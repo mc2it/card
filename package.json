@@ -26,12 +26,12 @@
 		"@types/eslint__js": "^8.42.3",
 		"@types/gulp": "^4.0.17",
 		"@types/node": "^20.14.10",
-		"boxen": "^7.1.1",
+		"boxen": "^8.0.0",
 		"del": "^7.1.0",
 		"execa": "^9.3.0",
 		"gulp": "^5.0.0",
 		"typescript": "^5.5.3",
-		"typescript-eslint": "^8.0.0-alpha.41"
+		"typescript-eslint": "^8.0.0-alpha.42"
 	},
 	"engines": {
 		"node": ">=22.0.0"
