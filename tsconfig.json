@@ -12,6 +12,7 @@
 		"noImplicitOverride": true,
 		"resolveJsonModule": true,
 		"strict": true,
-		"target": "ESNext"
+		"target": "ESNext",
+		"verbatimModuleSyntax": true
 	}
 }
