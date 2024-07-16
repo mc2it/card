@@ -34,7 +34,7 @@ export async function watch() {
 	await build();
 
 	gulp.watch(["bin/*.js", "src/**/*.ts"], async function buildApp() {
-		await $`tsc --sourceMap --build src/tsconfig.json`;
+		await $`tsc --build src/tsconfig.json --sourceMap`;
 		return execaNode(pkg.bin.mc2it_card);
 	});
 }
