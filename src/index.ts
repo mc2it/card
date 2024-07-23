@@ -1,5 +1,5 @@
-import {styleText} from "node:util";
 import boxen from "boxen";
+import {styleText} from "node:util";
 
 /**
  * Returns the card content.
