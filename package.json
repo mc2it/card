@@ -36,8 +36,6 @@
 		"mc2it"
 	],
 	"scripts": {
-		"postpublish": "gulp publish",
-		"prepack": "gulp",
 		"start": "node bin/mc2it_card.js"
 	}
 }
