@@ -1,5 +1,9 @@
 # Changelog
 
+## Version [6.0.0](https://github.com/mc2it/card/compare/v5.0.1...v6.0.0)
+- Ported the source code to [Haxe](https://haxe.org).
+- Fixed the program output when the compilation target is [Neko](https://nekovm.org).
+
 ## Version [5.0.1](https://github.com/mc2it/card/compare/v5.0.0...v5.0.1)
 - Migrated the documentation to the [GitHub wiki](https://github.com/mc2it/card/wiki).
 
