@@ -1,0 +1,12 @@
+{
+	"classPath": "src/",
+	"contributors": ["mc2it", "cedx"],
+	"dependencies": {"Console.hx": "", "hxnodejs": "", "tink_cli": ""},
+	"description": "Business card of MC2IT, distribution and services.",
+	"license": "MIT",
+	"name": "mc2it_card",
+	"releasenote": "Ported the source code to Haxe, fixed the program output when the compilation target is Neko.",
+	"tags": ["card", "cli", "mc2it"],
+	"url": "https://github.com/mc2it/card",
+	"version": "6.0.0"
+}
