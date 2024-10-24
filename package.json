@@ -1,12 +1,13 @@
 {
 	"bugs": "https://github.com/mc2it/card/issues",
 	"description": "Business card of MC2IT, distribution and services.",
+	"files": [],
 	"homepage": "https://github.com/mc2it/card",
 	"license": "MIT",
 	"name": "@mc2it/card",
 	"repository": "mc2it/card",
-	"type": "module",
-	"version": "5.0.1",
+	"type": "commonjs",
+	"version": "6.0.0",
 	"author": {
 		"email": "dev@mc2it.com",
 		"name": "MC2IT",
@@ -23,26 +24,12 @@
 		}
 	],
 	"devDependencies": {
-		"@types/eslint__js": "^8.42.3",
-		"@types/gulp": "^4.0.17",
-		"@types/node": "^22.7.9",
-		"boxen": "^8.0.1",
-		"gulp": "^5.0.0",
-		"typescript": "^5.6.3",
-		"typescript-eslint": "^8.11.0"
+		"esbuild": "^0.24.0",
+		"glob-watcher": "^6.0.0"
 	},
 	"engines": {
 		"node": ">=22.0.0"
 	},
-	"exports": {
-		"types": "./lib/index.d.ts",
-		"default": "./lib/index.js"
-	},
-	"files": [
-		"lib/",
-		"src/",
-		"tsconfig.json"
-	],
 	"keywords": [
 		"card",
 		"cli",
@@ -51,6 +38,6 @@
 	"scripts": {
 		"postpublish": "gulp publish",
 		"prepack": "gulp",
-		"start": "gulp build && node bin/mc2it_card.js"
+		"start": "node bin/mc2it_card.js"
 	}
 }
