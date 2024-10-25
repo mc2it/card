@@ -1,4 +1,4 @@
-package mc2it_card;
+package mc2it.card;
 
 #if nodejs import js.Node; #end
 import tink.Cli;

@@ -1,4 +1,4 @@
-package mc2it_card;
+package mc2it.card;
 
 #if macro
 import haxe.macro.Compiler;

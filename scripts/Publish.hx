@@ -1,5 +1,5 @@
 //! --class-path src
-import mc2it_card.Platform;
+import mc2it.card.Platform;
 
 /** Publishes the package. **/
 function main() {

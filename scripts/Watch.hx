@@ -8,7 +8,9 @@ using tink.CoreApi;
 /** Watches for file changes. **/
 function main() {
 	measureCommand("lix Build --debug");
-	GlobWatcher.watch("src/mc2it_card/**/*.hx", done -> {
+	Sys.command("node --enable-source-maps bin/mc2it_card.js");
+
+	GlobWatcher.watch("src/mc2it/card/**/*.hx", done -> {
 		measureCommand(done, "haxe --debug build.hxml");
 		Sys.command("node --enable-source-maps bin/mc2it_card.js");
 	});

@@ -1,4 +1,4 @@
-package mc2it_card;
+package mc2it.card;
 
 #if neko import neko.Utf8; #end
 using StringTools;

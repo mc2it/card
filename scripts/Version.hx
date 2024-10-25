@@ -1,5 +1,5 @@
 //! --class-path src
-import mc2it_card.Platform;
+import mc2it.card.Platform;
 import sys.io.File;
 
 /** Updates the version number in the sources. **/
