@@ -1,4 +1,4 @@
-//! --class-path src --define hxnodejs --define no-deprecation-warnings --library hxnodejs --library tink_core
+//! --define hxnodejs --define no-deprecation-warnings --library hxnodejs --library tink_core
 import haxe.Timer;
 import js.glob_watcher.GlobWatcher;
 import js.lib.Error as JsError;
