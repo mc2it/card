@@ -24,8 +24,8 @@
 		}
 	],
 	"devDependencies": {
-		"esbuild": "^0.24.0",
-		"glob-watcher": "^6.0.0"
+		"glob-watcher": "^6.0.0",
+		"terser": "^5.36.0"
 	},
 	"engines": {
 		"node": ">=22.0.0"
