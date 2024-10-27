@@ -1,6 +1,5 @@
 package mc2it.card;
 
-#if neko import neko.Utf8; #end
 using StringTools;
 
 /** Builds a business card by appending string chunks. **/
@@ -48,7 +47,7 @@ abstract CardBuilder(StringBuf) from StringBuf {
 	/** Gets the length in characters of the specified text, excluding formatting tags. **/
 	function getLength(text: String): Int {
 		final innerText = ~/<[^>]+>/g.replace(text, "");
-		return #if neko Utf8.length(innerText) #else innerText.length #end;
+		return #if neko neko.Utf8.length(innerText) #else innerText.length #end;
 	}
 
 	/** Repeats the specified `character` a given number of `times`. **/
