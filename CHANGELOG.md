@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [7.0.0](https://github.com/mc2it/card/compare/v6.0.0...v7.0.0)
+- Ported the source code to [CoffeeScript](https://coffeescript.org).
+
 ## Version [6.0.0](https://github.com/mc2it/card/compare/v5.0.1...v6.0.0)
 - Ported the source code to [Haxe](https://haxe.org).
 - Fixed the program output when the compilation target is [Neko](https://nekovm.org).
