@@ -1,13 +1,12 @@
 {
 	"bugs": "https://github.com/mc2it/card/issues",
 	"description": "Business card of MC2IT, distribution and services.",
-	"files": [],
 	"homepage": "https://github.com/mc2it/card",
 	"license": "MIT",
 	"name": "@mc2it/card",
 	"repository": "mc2it/card",
-	"type": "commonjs",
-	"version": "6.0.0",
+	"type": "module",
+	"version": "7.0.0",
 	"author": {
 		"email": "dev@mc2it.com",
 		"name": "MC2IT",
@@ -23,13 +22,21 @@
 			"url": "https://belin.io"
 		}
 	],
+	"dependencies": {
+		"boxen": "^8.0.1"
+	},
 	"devDependencies": {
-		"glob-watcher": "^6.0.0",
-		"terser": "^5.36.0"
+		"@coffeelint/cli": "^5.2.11",
+		"@types/node": "^22.8.6",
+		"coffeescript": "^2.7.0"
 	},
 	"engines": {
 		"node": ">=22.0.0"
 	},
+	"files": [
+		"lib/",
+		"src/"
+	],
 	"keywords": [
 		"card",
 		"cli",
