@@ -1,6 +1,0 @@
---define js-es=6
---define js-global=globalThis
---js bin/mc2it_card.js
---library hxnodejs
---macro mc2it.card.Macro.shebang("node")
-share/build.hxml
