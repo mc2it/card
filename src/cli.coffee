@@ -31,4 +31,4 @@ try
 
 catch error
 	console.error if error instanceof Error then error.message else error
-	process.exit 1
+	process.exit 500
