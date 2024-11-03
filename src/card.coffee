@@ -1,11 +1,7 @@
 import {styleText} from "node:util"
 import boxen from "boxen"
 
-###*
 # Returns the card content.
-# @param {number} margin The margin size.
-# @returns {string} The card content.
-###
 export getCard = (margin = 0) ->
 	buffer = [
 		"#{styleText "white", styleText("bold", " MC2IT")} #{styleText "white", "- Distribution & Services"}"
