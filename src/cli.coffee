@@ -19,8 +19,8 @@ Options:
 try
 	process.title = "MC2IT Card"
 	{values} = parseArgs options:
-		help: {short: "h", type: "boolean", default: false}
-		version: {short: "v", type: "boolean", default: false}
+		help: {short: "h", type: "boolean", default: off}
+		version: {short: "v", type: "boolean", default: off}
 
 	console.log switch
 		when values.help then usage
