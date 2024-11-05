@@ -16,6 +16,7 @@ task "clean", "Deletes all generated files.", ->
 task "dist", "Packages the project.", ->
 	invoke "clean"
 	invoke "build"
+	rmSync "lib/cakefile.js"
 
 task "lint", "Performs the static analysis of source code.", ->
 	npx "coffeelint", "--file=etc/coffeelint.json", "Cakefile", "src"
