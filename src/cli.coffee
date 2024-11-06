@@ -8,11 +8,11 @@ usage = """
 Print the business card of MC2IT, distribution and services.
 
 Usage:
-  npx @mc2it/card
+	npx @mc2it/card
 
 Options:
-  -h, --help     Display this help.
-  -v, --version  Output the version number.
+	-h, --help     Display this help.
+	-v, --version  Output the version number.
 """
 
 # Start the application.
@@ -23,7 +23,7 @@ try
 		version: {short: "v", type: "boolean", default: off}
 
 	console.log switch
-		when values.help then usage
+		when values.help then usage.replaceAll "\t", "  "
 		when values.version
 			pkg = await import("../package.json", with: {type: "json"})
 			pkg.default.version
