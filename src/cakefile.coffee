@@ -7,7 +7,7 @@ option "-m", "--map", "Whether to generate source maps."
 
 task "build", "Builds the project.", (options) ->
 	sourcemaps = if options.map then ["--map"] else []
-	run "coffee", "--compile", sourcemaps..., "--no-header", "--output", "lib", "src"
+	npx "coffee", "--compile", sourcemaps..., "--no-header", "--output", "lib", "src"
 
 task "clean", "Deletes all generated files.", ->
 	rmSync join("lib", file) for file from readdirSync "lib" when not file.endsWith ".d.ts"
@@ -27,7 +27,7 @@ task "publish", "Publishes the package.", ->
 
 task "watch", "Watches for file changes.", (options) ->
 	sourcemaps = if options.map then ["--map"] else []
-	run "coffee", "--compile", sourcemaps..., "--no-header", "--output", "lib", "--watch", "src"
+	npx "coffee", "--compile", sourcemaps..., "--no-header", "--output", "lib", "--watch", "src"
 
 # Executes a command from a local package.
 npx = (command, args...) -> run "npm", "exec", "--", command, args...
