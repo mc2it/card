@@ -24,9 +24,7 @@ try
 
 	console.log switch
 		when values.help then usage.replaceAll "\t", "  "
-		when values.version
-			pkg = await import("../package.json", with: {type: "json"})
-			pkg.default.version
+		when values.version then {default: {version}} = await import("../package.json", with: {type: "json"}); version
 		else getCard 1
 
 catch error
