@@ -27,7 +27,7 @@ export publish = ->
 export watch = ->
 	await npx "coffee", "--compile", "--map", "--no-header", "--output", "lib", "--watch", "src"
 
-# Packages the project.
+# The default task.
 export default gulp.series clean, build
 
 # Executes a command from a local package.
