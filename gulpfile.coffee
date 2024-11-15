@@ -25,7 +25,7 @@ export publish = ->
 
 # Watches for file changes.
 export watch = ->
-	await npx "coffee", "--compile", "--map", "--no-header", "--output", "lib", "--watch", "src"
+	npx "coffee", "--compile", "--map", "--no-header", "--output", "lib", "--watch", "src"
 
 # The default task.
 export default gulp.series clean, build
