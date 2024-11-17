@@ -8,7 +8,7 @@ usage = """
 Print the business card of MC2IT, distribution and services.
 
 Usage:
-	npx @mc2it/card
+	npx @mc2it/card [options]
 
 Options:
 	-h, --help     Display this help.
