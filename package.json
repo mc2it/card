@@ -46,6 +46,9 @@
 		"cli",
 		"mc2it"
 	],
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"start": "node bin/card.js"
 	}
