@@ -6,7 +6,6 @@
 		"checkJs": true,
 		"incremental": true,
 		"module": "NodeNext",
-		"noEmit": true,
 		"noImplicitOverride": true,
 		"resolveJsonModule": true,
 		"skipLibCheck": true,
