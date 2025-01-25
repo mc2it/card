@@ -2,17 +2,26 @@ import gulp from "gulp";
 import {spawn} from "node:child_process";
 import {readdir, rm} from "node:fs/promises";
 import {join} from "node:path";
+import {env} from "node:process";
+import {setTimeout} from "node:timers/promises";
 import pkg from "./package.json" with {type: "json"};
 
 /** Builds the project. */
 export async function build() {
-	await npx("tsc", "--build", "src/tsconfig.json");
+	const production = env.NODE_ENV == "production";
+	await npx("tsc", "--build", "src/tsconfig.json", ...production ? [] : ["--sourceMap"]);
 }
 
 /** Deletes all generated files. */
 export async function clean() {
 	await rm("lib", {force: true, recursive: true});
 	for (const file of await readdir("var")) if (file != ".gitkeep") await rm(join("var", file), {recursive: true});
+}
+
+/** Packages the project. */
+export async function dist() {
+	env.NODE_ENV = "production";
+	await build();
 }
 
 /** Performs the static analysis of source code. */
@@ -30,12 +39,14 @@ export async function publish() {
 
 /** Watches for file changes. */
 export async function watch() {
+	env.NODE_ENV = "development";
 	void npx("tsc", "--build", "src/tsconfig.json", "--preserveWatchOutput", "--sourceMap", "--watch");
+	await setTimeout(3_000);
 	void run("node", "--enable-source-maps", "--watch", "--watch-preserve-output", pkg.bin.card);
 }
 
 /** The default task. */
-export default gulp.series(clean, build);
+export default gulp.series(clean, dist);
 
 /**
  * Executes a command from a local package.
