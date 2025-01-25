@@ -19,7 +19,6 @@ Options:
 // Start the application.
 try {
 	process.title = "MC2IT Card";
-
 	const {values} = parseArgs({options: {
 		help: {short: "h", type: "boolean", default: false},
 		version: {short: "v", type: "boolean", default: false}
