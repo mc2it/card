@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [8.0.0](https://github.com/mc2it/card/compare/v7.0.0...v8.0.0)
+- Ported the source code to [TypeScript](https://www.typescriptlang.org).
+
 ## Version [7.0.0](https://github.com/mc2it/card/compare/v6.0.0...v7.0.0)
 - Ported the source code to [CoffeeScript](https://coffeescript.org).
 
