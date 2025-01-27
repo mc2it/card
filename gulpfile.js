@@ -2,7 +2,6 @@ import gulp from "gulp";
 import {spawn} from "node:child_process";
 import {readdir, rm} from "node:fs/promises";
 import {join} from "node:path";
-import {setTimeout} from "node:timers/promises";
 import pkg from "./package.json" with {type: "json"};
 
 /** Builds the project. */
@@ -31,9 +30,7 @@ export async function publish() {
 
 /** Watches for file changes. */
 export async function watch() {
-	void npx("tsc", "--build", "src/tsconfig.json", "--preserveWatchOutput", "--sourceMap", "--watch");
-	await setTimeout(3_000);
-	void run("node", "--enable-source-maps", "--watch", "--watch-preserve-output", pkg.bin.card);
+	await npx("tsc", "--build", "src/tsconfig.json", "--preserveWatchOutput", "--sourceMap", "--watch");
 }
 
 /** The default task. */
