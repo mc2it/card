@@ -26,7 +26,6 @@
 		"boxen": "^8.0.1"
 	},
 	"devDependencies": {
-		"@types/eslint__js": "^8.42.3",
 		"@types/gulp": "^4.0.17",
 		"@types/node": "^22.13.1",
 		"gulp": "^5.0.0",
