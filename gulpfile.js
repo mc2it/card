@@ -6,7 +6,7 @@ import pkg from "./package.json" with {type: "json"};
 
 /** Builds the project. */
 export async function build() {
-	await npx("tsc", "--build", "src/tsconfig.json");
+	await run("npx", "tsc", "--build", "src/tsconfig.json");
 }
 
 /** Deletes all generated files. */
@@ -17,34 +17,24 @@ export async function clean() {
 
 /** Performs the static analysis of source code. */
 export async function lint() {
-	await npx("tsc", "--build", "tsconfig.json", "--noEmit");
-	await npx("eslint", "--config=etc/eslint.js", "gulpfile.js", "bin", "src");
+	await run("npx", "tsc", "--build", "tsconfig.json", "--noEmit");
+	await run("npx", "eslint", "--config=etc/eslint.js", "gulpfile.js", "bin", "src");
 }
 
 /** Publishes the package. */
 export async function publish() {
-	await npx("gulp");
+	await run("npx", "gulp");
 	for (const registry of ["https://registry.npmjs.org", "https://npm.pkg.github.com"]) await run("npm", "publish", `--registry=${registry}`);
 	for (const action of [["tag"], ["push", "origin"]]) await run("git", ...action, `v${pkg.version}`);
 }
 
 /** Watches for file changes. */
 export async function watch() {
-	await npx("tsc", "--build", "src/tsconfig.json", "--preserveWatchOutput", "--sourceMap", "--watch");
+	await run("npx", "tsc", "--build", "src/tsconfig.json", "--preserveWatchOutput", "--sourceMap", "--watch");
 }
 
 /** The default task. */
 export default gulp.series(clean, build);
-
-/**
- * Executes a command from a local package.
- * @param {string} command The command to run.
- * @param {...string} args The command arguments.
- * @return {Promise<void>} Resolves when the command is terminated.
- */
-function npx(command, ...args) {
-	return run("npm", "exec", "--", command, ...args);
-}
 
 /**
  * Spawns a new process using the specified command.
