@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.VisualStudio.JavaScript.Sdk/1.0.2191419">
+	<PropertyGroup>
+		<Company>MC2IT</Company>
+		<Copyright>© MC2IT</Copyright>
+		<Description>Business card of MC2IT, distribution and services.</Description>
+		<Product>MC2IT Card</Product>
+		<Version>8.0.0</Version>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<PackageJsonDirectory>$(SolutionDir)</PackageJsonDirectory>
+		<ShouldRunBuildScript>false</ShouldRunBuildScript>
+		<ShouldRunNpmInstall>false</ShouldRunNpmInstall>
+	</PropertyGroup>
+</Project>
