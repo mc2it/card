@@ -13,7 +13,7 @@
 		"url": "https://www.mc2it.com"
 	},
 	"bin": {
-		"card": "bin/Card.js"
+		"card": "bin/Mc2it.Card.js"
 	},
 	"contributors": [
 		{
@@ -27,7 +27,7 @@
 	},
 	"devDependencies": {
 		"@types/gulp": "^4.0.17",
-		"@types/node": "^22.13.17",
+		"@types/node": "^22.14.0",
 		"gulp": "^5.0.0",
 		"typescript": "^5.8.2",
 		"typescript-eslint": "^8.29.0"
