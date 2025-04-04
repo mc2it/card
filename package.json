@@ -13,7 +13,7 @@
 		"url": "https://www.mc2it.com"
 	},
 	"bin": {
-		"card": "bin/card.js"
+		"card": "bin/Card.js"
 	},
 	"contributors": [
 		{
