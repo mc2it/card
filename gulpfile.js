@@ -6,7 +6,7 @@ import pkg from "./package.json" with {type: "json"};
 
 /** Builds the project. */
 export async function build() {
-	await run("npx", "tsc", "--build", "src/tsconfig.json");
+	await run("npx tsc --build src/tsconfig.json");
 }
 
 /** Deletes all generated files. */
@@ -17,20 +17,20 @@ export async function clean() {
 
 /** Performs the static analysis of source code. */
 export async function lint() {
-	await run("npx", "tsc", "--build", "tsconfig.json", "--noEmit");
-	await run("npx", "eslint", "--config=etc/ESLint.js", "gulpfile.js", "bin", "src");
+	await run("npx tsc --build tsconfig.json --noEmit");
+	await run("npx eslint --config=etc/ESLint.js gulpfile.js bin src");
 }
 
 /** Publishes the package. */
 export async function publish() {
-	await run("npx", "gulp");
-	for (const action of [["tag"], ["push", "origin"]]) await run("git", ...action, `v${pkg.version}`);
-	for (const registry of ["https://registry.npmjs.org", "https://npm.pkg.github.com"]) await run("npm", "publish", `--registry=${registry}`);
+	await run("npx gulp");
+	for (const action of ["tag", "push origin"]) await run(`git ${action} v${pkg.version}`);
+	for (const registry of ["https://registry.npmjs.org", "https://npm.pkg.github.com"]) await run(`npm publish --registry=${registry}`);
 }
 
 /** Watches for file changes. */
 export async function watch() {
-	await run("npx", "tsc", "--build", "src/tsconfig.json", "--preserveWatchOutput", "--sourceMap", "--watch");
+	await run("npx tsc --build src/tsconfig.json --preserveWatchOutput --sourceMap --watch");
 }
 
 /** The default task. */
@@ -39,12 +39,11 @@ export default gulp.series(clean, build);
 /**
  * Spawns a new process using the specified command.
  * @param {string} command The command to run.
- * @param {...string} args The command arguments.
  * @returns {Promise<void>} Resolves when the command is terminated.
  */
-function run(command, ...args) {
+function run(command) {
 	return new Promise((resolve, reject) => {
-		const process = spawn(command, args, {shell: true, stdio: "inherit"});
-		process.on("close", code => code ? reject(Error([command, ...args].join(" "))) : resolve());
+		const process = spawn(command, {shell: true, stdio: "inherit"});
+		process.on("close", code => code ? reject(Error(command)) : resolve());
 	});
 }
