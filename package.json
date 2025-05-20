@@ -6,7 +6,7 @@
 	"name": "@mc2it/card",
 	"repository": "mc2it/card",
 	"type": "module",
-	"version": "8.0.0",
+	"version": "8.1.0",
 	"author": {
 		"email": "dev@mc2it.com",
 		"name": "MC2IT",
