@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [8.1.0](https://github.com/mc2it/card/compare/v8.0.0...v8.1.0)
+- Added the link to the [LinkedIn](https://linkedin.com) profile.
+
 ## Version [8.0.0](https://github.com/mc2it/card/compare/v7.0.0...v8.0.0)
 - Ported the source code to [TypeScript](https://www.typescriptlang.org).
 
