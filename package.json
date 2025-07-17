@@ -15,13 +15,6 @@
 	"bin": {
 		"card": "bin/Mc2it.Card.js"
 	},
-	"contributors": [
-		{
-			"email": "cedric@belin.io",
-			"name": "Cédric Belin",
-			"url": "https://belin.io"
-		}
-	],
 	"dependencies": {
 		"boxen": "^8.0.1"
 	},
