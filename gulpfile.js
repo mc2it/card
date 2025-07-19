@@ -15,6 +15,11 @@ export async function clean() {
 	for (const file of await readdir("var")) if (file != ".gitkeep") await rm(join("var", file), {recursive: true});
 }
 
+/** Builds the project in debug mode. */
+export async function debug() {
+	await run("npx tsc --build src/tsconfig.json --sourceMap");
+}
+
 /** Performs the static analysis of source code. */
 export async function lint() {
 	await run("npx tsc --build tsconfig.json --noEmit");

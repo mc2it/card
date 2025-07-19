@@ -1,0 +1,12 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Program",
+			"preLaunchTask": "Debug",
+			"request": "launch",
+			"type": "node",
+			"program": "${workspaceFolder}/bin/Mc2it.Card.js"
+		}
+	]
+}
