@@ -43,9 +43,5 @@
 	],
 	"publishConfig": {
 		"access": "public"
-	},
-	"scripts": {
-		"build": "gulp build",
-		"clean": "gulp clean"
 	}
 }
