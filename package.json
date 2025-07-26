@@ -1,4 +1,5 @@
 {
+	"author": "MC2IT <dev@mc2it.com>",
 	"bugs": "https://github.com/mc2it/card/issues",
 	"description": "Business card of MC2IT, distribution and services.",
 	"homepage": "https://github.com/mc2it/card",
@@ -7,11 +8,6 @@
 	"repository": "mc2it/card",
 	"type": "module",
 	"version": "8.1.0",
-	"author": {
-		"email": "dev@mc2it.com",
-		"name": "MC2IT",
-		"url": "https://www.mc2it.com"
-	},
 	"bin": {
 		"card": "bin/Mc2it.Card.js"
 	},
