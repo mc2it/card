@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [8.2.0](https://github.com/mc2it/card/compare/v8.1.0...v8.2.0)
+- Added the postal address and phone number.
+
 ## Version [8.1.0](https://github.com/mc2it/card/compare/v8.0.0...v8.1.0)
 - Added the link to the [LinkedIn](https://linkedin.com) profile.
 
