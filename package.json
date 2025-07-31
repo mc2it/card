@@ -7,7 +7,7 @@
 	"name": "@mc2it/card",
 	"repository": "mc2it/card",
 	"type": "module",
-	"version": "8.1.0",
+	"version": "8.2.0",
 	"bin": {
 		"card": "bin/Mc2it.Card.js"
 	},
