@@ -24,7 +24,7 @@ export async function dist() {
 
 /** Performs the static analysis of source code. */
 export async function lint() {
-	await run(`npx tsc ${typeScriptArguments()} --noEmit`);
+	await run("npx tsc --build tsconfig.json --noEmit");
 	await run("npx eslint --config=etc/ESLint.js gulpfile.js bin src");
 }
 
