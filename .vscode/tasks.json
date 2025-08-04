@@ -2,10 +2,10 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Debug",
+			"label": "Build",
 			"type": "shell",
 			"command": "gulp",
-			"args": ["debug"],
+			"args": ["build"],
 			"problemMatcher": "$tsc"
 		}
 	]
