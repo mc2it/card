@@ -196,13 +196,5 @@ export default ts.config(
 			"@typescript-eslint/switch-exhaustiveness-check": ["error", {considerDefaultExhaustiveForUnions: true}],
 			"@typescript-eslint/typedef": "error"
 		}
-	},
-	{
-		files: ["gulpfile.js"],
-		rules: {
-			"prefer-arrow-callback": "off",
-			"@typescript-eslint/explicit-function-return-type": "off",
-			"@typescript-eslint/explicit-module-boundary-types": "off"
-		}
 	}
 );
