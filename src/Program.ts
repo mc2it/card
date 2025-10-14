@@ -1,5 +1,5 @@
 import console from "node:console";
-import process from "node:process";
+import {exit} from "node:process";
 import {parseArgs} from "node:util";
 import {getCard} from "./Card.js";
 import pkg from "../package.json" with {type: "json"};
@@ -18,7 +18,6 @@ Options:
 
 // Start the application.
 try {
-	process.title = "MC2IT Card";
 	const {values} = parseArgs({options: {
 		help: {short: "h", type: "boolean", default: false},
 		version: {short: "v", type: "boolean", default: false}
@@ -30,5 +29,5 @@ try {
 }
 catch (error) {
 	console.error(error instanceof Error ? error.message : error);
-	process.exit(500);
+	exit(500);
 }
