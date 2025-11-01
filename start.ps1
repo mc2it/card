@@ -2,4 +2,7 @@
 $ErrorActionPreference = "Stop"
 $PSNativeCommandUseErrorActionPreference = $true
 Set-StrictMode -Version Latest
-node $PSScriptRoot/bin/Mc2it.Card.js @args
+
+$commandPath = Get-Item $PSCommandPath
+$scriptRoot = $commandPath.LinkType ? (Split-Path $commandPath.LinkTarget) : $PSScriptRoot
+node $scriptRoot/bin/Mc2it.Card.js @args
