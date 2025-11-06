@@ -9,7 +9,7 @@
 	"type": "module",
 	"version": "8.2.0",
 	"bin": {
-		"card": "bin/Mc2it.Card.js"
+		"Card": "bin/Mc2it.Card.js"
 	},
 	"dependencies": {
 		"boxen": "^8.0.1"
