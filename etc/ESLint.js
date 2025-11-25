@@ -10,8 +10,8 @@ export default defineConfig(
 	{
 		languageOptions: {
 			parserOptions: {
-				project: "tsconfig.json",
-				tsconfigRootDir: join(import.meta.dirname, "..")
+				project: true,
+				tsconfigRootDir: join(import.meta.dirname, "../src")
 			}
 		},
 		rules: {
