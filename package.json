@@ -15,7 +15,7 @@
 		"boxen": "^8.0.1"
 	},
 	"devDependencies": {
-		"@types/node": "^25.0.2",
+		"@types/node": "^25.0.3",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.50.0"
 	},
