@@ -1,0 +1,6 @@
+<Solution>
+	<Project Path="Card.esproj">
+		<Build />
+		<Deploy />
+	</Project>
+</Solution>
