@@ -3,11 +3,17 @@ Business card of MC2IT, distribution and services,
 implemented in [TypeScript](https://www.typescriptlang.org).
 
 ## Usage
-Before you start, you need to make sure you have [Node.js](https://nodejs.org) up and running.
-You can verify if you're already good to go with the following command:
+Before you start, you need to make sure you have[Node.js](https://nodejs.org)
+and [npm](https://www.npmjs.com), the Node.js package manager, up and running.
+
+You can verify if you're already good to go with the following commands:
 
 ```shell
 node --version
+# v25.6.0
+
+npm --version
+# 11.8.0
 ```
 
 Then, to display the business card, just type the following command in your terminal:
